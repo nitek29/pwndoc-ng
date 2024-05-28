@@ -27,6 +27,8 @@ async function generateDoc(audit) {
     var settings = await Settings.getAll();
     var preppedAudit = await prepAuditData(audit, settings)
 
+    console.log(preppedAudit.audit)
+
     var opts = {};
     // opts.centered = true;
     opts.getImage = function(tagValue, tagName) {
