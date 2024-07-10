@@ -32,6 +32,7 @@ mongoose.Promise = global.Promise;
 mongoose.Schema.Types.String.set('trim', true);
 
 mongoose.connect(`mongodb://${config.database.server}:${config.database.port}/${config.database.name}`, {});
+console.log(`mongodb://${config.database.server}:${config.database.port}/${config.database.name}`)
 
 // Models import
 require('./models/user');

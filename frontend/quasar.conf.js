@@ -45,6 +45,11 @@ module.exports = function (ctx) {
           API_PORT: 8443,
         }
     },
+    // watchOptions : {
+    //     aggregateTimeout: 200,
+    //     poll: 1000,
+    //   }
+    // ,
     devServer: {
       https: {
         key: fs.readFileSync(__dirname+'/ssl/server.key'),
@@ -52,14 +57,28 @@ module.exports = function (ctx) {
       },
       host: "0.0.0.0",
       port: 8081,
-      proxy: {
-        '/api': {
-          target: 'https://backend:4242',
-          changeOrigin: true,
-          secure: false
-        }
-      }
-      //open: true // opens browser window automatically
+      // proxy: {
+      //   '/api': {
+      //     target: 'https://backend:4242',
+      //     changeOrigin: true,
+      //     secure: false
+      //   },
+      //  '/collab' : 
+      //  {
+      //   target: 'https://backend:8440/',
+      //   changeOrigin: true,
+      //   secure: false,
+      //  // ws: true // Ajout du support WebSocket
+      //  },
+      //  '/socket.io' : 
+      //  {
+      //   target: 'https://backend:4242/',
+      //   changeOrigin: true,
+      //   secure: false,
+      //   ws: true // Ajout du support WebSocket
+      //  },
+      // },
+      //open: true, // opens browser window automatically
     },
     // framework: 'all' --- includes everything; for dev only!
     framework: {

@@ -13,6 +13,8 @@ var Settings = require('mongoose').model('Settings');
 var CVSS31 = require('./cvsscalc31.js');
 var translate = require('../translate')
 var $t
+const he = require('he');
+
 
 // Generate document with docxtemplater
 async function generateDoc(audit) {
@@ -26,8 +28,6 @@ async function generateDoc(audit) {
 
     var settings = await Settings.getAll();
     var preppedAudit = await prepAuditData(audit, settings)
-
-    console.log(preppedAudit.audit)
 
     var opts = {};
     // opts.centered = true;
@@ -297,12 +297,12 @@ expressions.filters.lines = function(input) {
 
 // Creates a hyperlink: {@input | linkTo: 'https://example.com' | p}
 expressions.filters.linkTo = function(input, url) {
-    var encodedUrl = encodeURIComponent(url); // fix breaking word with special characters in reference
-    var encodedInput = encodeURIComponent(input); // fix breaking word with special characters in reference
+    var encodedUrl = he.encode(url, { useNamedReferences: true });//encodeURIComponent(url); // fix breaking word with special characters in reference
+    var encodedInput = he.encode(input, { useNamedReferences: true });//encodeURIComponent(input); // fix breaking word with special characters in reference
     return `<w:r><w:fldChar w:fldCharType="begin"/></w:r>
         <w:r><w:instrText xml:space="preserve"> HYPERLINK "${encodedUrl}" </w:instrText></w:r>
         <w:r><w:fldChar w:fldCharType="separate"/></w:r>
-        <w:r><w:rPr><w:rStyle w:val="Hyperlink"/></w:rPr>
+        <w:r><w:rPr><w:rStyle w:val="Hyperlien"/></w:rPr>
         <w:t>${encodedInput}</w:t>
         </w:r><w:r><w:fldChar w:fldCharType="end"/></w:r>`;
 }
@@ -902,8 +902,9 @@ async function prepAuditData(data, settings) {
                     tmpFinding[_.deburr(label.toLowerCase()).replace(/\s/g, '').replace(/[^\w]/g, '_')] = field.text
             }
         }
-        result.findings.push(tmpFinding)
+       result.findings.push(tmpFinding)
     }
+    result.findings = sortAndUpdateIdentifiers(result.findings)
 
     result.categories = _
         .chain(result.findings)
@@ -942,6 +943,25 @@ async function prepAuditData(data, settings) {
     replaceSubTemplating(result)
     return result
 }
+
+function sortAndUpdateIdentifiers(vulns) {
+    vulns.sort((a, b) => {
+      if (b.cvss.baseMetricScore !== a.cvss.baseMetricScore) {
+        return parseFloat(b.cvss.baseMetricScore) - parseFloat(a.cvss.baseMetricScore);
+      } else if (b.priority !== a.priority) {
+        return b.priority - a.priority;
+      } else {
+        return a.remediationComplexity - b.remediationComplexity;
+      }
+    });
+  
+    vulns.forEach((vuln, index) => {
+      vuln.identifier = `VULN-${(index + 1).toString().padStart(2, '0')}`;
+    });
+  
+    return vulns;
+  }
+  
 
 async function splitHTMLParagraphs(data) {
     var result = []

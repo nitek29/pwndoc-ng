@@ -3,7 +3,7 @@ services:
 
   mongodb:
     image: mongo:4.2.15
-    container_name: mongo-pwndoc-ng-dev
+    container_name: mongo-pwndoc-ng
     volumes:
       - mongo-data-dev:/data/db
     ports:
@@ -16,7 +16,7 @@ services:
     build:
       context: ./backend/
       dockerfile: Dockerfile.dev
-    container_name: pwndoc-ng-backend-dev
+    container_name: pwndoc-ng-backend
     entrypoint: ""
     working_dir: "/app"
     command: "npm run dev"
@@ -31,18 +31,13 @@ services:
     depends_on:
       - mongodb
     restart: always
-    ports:
-      - 5252:5252
     links:
       - mongodb
-    networks:
-      - backend
 
   frontend-app:
     build:
       context: ./frontend/
       dockerfile: Dockerfile.dev
-    container_name: pwndoc-ng-dev-frontend
     volumes:
       - ./frontend/src:/app/src
       - ./frontend/ssl:/app/ssl
@@ -55,8 +50,6 @@ services:
     restart: always
     links:
       - backend
-    networks:
-      - backend  
 
   frontend:
     image: nginx:stable-alpine
@@ -66,16 +59,10 @@ services:
       - ./frontend/ssl:/etc/nginx/ssl/
     restart: always
     ports:
-      - 8081:8081
+      - 8443:8443
     links:
       - frontend-app
-      - backend
-    networks:
       - backend
 
 volumes:
   mongo-data-dev:
-
-networks:
-  backend:
-      driver: bridge

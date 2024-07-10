@@ -116,6 +116,7 @@ export default {
             this.loading = true
             AuditService.getAudits({findingTitle: this.search.finding})
             .then((data) => {
+                console.log(data.data.datas);
                 this.audits = data.data.datas
                 this.loading = false
             })

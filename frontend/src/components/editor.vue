@@ -715,7 +715,6 @@ export default {
       editable: false,
       extensions: extensionEditor ,
       onUpdate: () => {
-        console.log("onUpdate");
         if(this.state && this.initialeDataUpdated && this.countChangeAfterUpdate>0 && this.countChangeAfterUpdate<this.countChange){
            this.$emit('editorchange') // need save only if sync is done
         } else {
@@ -835,7 +834,6 @@ export default {
               break;
             } else {
               await this.sleep(500)
-              console.log('Wait websocket')
             }
           }
         }

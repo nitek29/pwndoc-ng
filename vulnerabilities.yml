@@ -1,0 +1,2440 @@
+- cvssv3: 'CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N'
+  details:
+    - locale: fr
+      title: >-
+        Divulgation d'informations sensibles indexées dans les moteurs de
+        recherche Web ou d'autres sources publiques
+      vulnType: OWASP WSTG
+      description: >-
+        <p>Les moteurs de recherche peuvent être utilisés pour effectuer la
+        reconnaissance de sites Web et d'applications.
+      observation: "<ul><li><p>Confidentialité\_: lire les données de l'application\_: l'attaquant peut être en mesure de lire des informations sensibles</p></li></ul>"
+      remediation: >-
+        <p>Avant de publier une application, il est essentiel de considérer la
+        sensibilité des données qui y sont exposées afin d'éviter toute
+        divulgation accidentelle d'informations sensibles.</p>
+      references:
+        - >-
+          https://owasp.org/www-project-web-security-testing-guide/stable/4-Web_Application_Security_Testing/01-Information_Gathering/01-Conduct_Search_Engine_Discovery_Reconnaissance_for_Information_Leakage
+      customFields: []
+  category: La collecte d'informations
+- cvssv3: 'CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N'
+  details:
+    - locale: fr
+      title: Divulgation d'informations sensibles dans les en-têtes HTTP
+      vulnType: OWASP WSTG
+      description: >-
+        <p>Cette situation se produit lorsque l'application révèle le type et/ou
+        la version d'un composant interne utilisé en révélant des informations
+        dans les en-têtes du protocole HTTP.
+      observation: "<ul><li><p>Confidentialité\_: lire les données de l'application\_: l'attaquant peut être en mesure de lire des informations sensibles</p></li></ul>"
+      remediation: >-
+        <p>Pour empêcher ce type de divulgation d'informations, il est
+        nécessaire de masquer les informations affichées dans les en-têtes de
+        protocole. Pour empêcher ce type de divulgation d'informations, il est
+        nécessaire de masquer les informations affichées dans les en-têtes de
+        protocole.</p><
+      references:
+        - >-
+          https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/01-Information_Gathering/02-Fingerprint_Web_Server
+        - 'https://cwe.mitre.org/data/definitions/200.html'
+        - >-
+          https://wiki.owasp.org/index.php/Testing_for_Web_Application_Fingerprint_(OWASP-IG-004)
+      customFields: []
+  category: La collecte d'informations
+- cvssv3: 'CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N'
+  details:
+    - locale: fr
+      title: Divulgation d'informations sensibles dans les cookies d'application
+      vulnType: OWASP WSTG
+      description: >-
+        <p>La configuration des cookies expose des informations sensibles à la
+        fois dans le nom préétabli du cookie et dans son contenu, ce qui conduit
+        à cette vulnérabilité.
+      observation: "<ul><li><p>Confidentialité\_: lire les données de l'application\_: l'attaquant peut être en mesure de lire des informations sensibles</p></li></ul>"
+      remediation: >-
+        <p>Pour empêcher ce type de divulgation d'informations, il est
+        nécessaire soit de masquer les données affichées dans les cookies, soit
+        de modifier leur nom ou leur contenu.</p><p>Afin de corriger les
+        vulnérabilités divulguées publiquement des composants détectés,
+      references:
+        - >-
+          https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/01-Information_Gathering/08-Fingerprint_Web_Application_Framework
+      customFields: []
+  category: La collecte d'informations
+- cvssv3: 'CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N'
+  details:
+    - locale: fr
+      title: Divulgation d'informations sensibles dans le fichier « robots.txt »
+      vulnType: OWASP WSTG
+      description: >-
+        <p>Certains programmes utilisent des robots araignées pour parcourir
+        automatiquement les sites Web dans le but de les indexer.
+      observation: "<ul><li><p>Confidentialité\_: lire les données de l'application\_: l'attaquant peut être en mesure de lire des informations sensibles</p></li></ul>"
+      remediation: >-
+        <p>Le fichier « robots.txt » ne doit pas être utilisé comme méthode de
+        restriction de l'accès aux zones non sécurisées de l'application.
+      references:
+        - >-
+          https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/01-Information_Gathering/03-Review_Webserver_Metafiles_for_Information_Leakage
+        - 'https://cwe.mitre.org/data/definitions/200.html'
+        - 'https://developers.google.com/search/docs/advanced/robots/intro'
+      customFields: []
+  category: La collecte d'informations
+- cvssv3: 'CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N'
+  details:
+    - locale: fr
+      title: Divulgation d'informations sensibles dans le fichier 'sitemap.xml'
+      vulnType: OWASP WSTG
+      description: sitemap.xml
+      observation: "<ul><li><p>Confidentialité\_: lire les données de l'application\_: l'attaquant peut être en mesure de lire des informations sensibles</p></li></ul>"
+      remediation: sitemap.xml
+      references:
+        - >-
+          https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/01-Information_Gathering/03-Review_Webserver_Metafiles_for_Information_Leakage
+        - 'https://cwe.mitre.org/data/definitions/200.html'
+      customFields: []
+  category: La collecte d'informations
+- cvssv3: 'CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N'
+  details:
+    - locale: fr
+      title: Divulgation d'informations sensibles dans le fichier « security.txt »
+      vulnType: OWASP WSTG
+      description: >-
+        <p>Une norme proposée permet aux pages Web de spécifier des politiques
+        de sécurité et des informations de contact dans le fichier «
+        security.txt ».</p><p>Le fichier « security.txt » contient des
+        informations sensibles qui pourraient être utilisées par un attaquant
+        pour
+      observation: "<ul><li><p>Confidentialité\_: lire les données de l'application\_: l'attaquant peut être en mesure de lire des informations sensibles</p></li></ul>"
+      remediation: >-
+        <p>Il est conseillé de supprimer toutes les données privées du fichier «
+        security.txt » qui ne sont pas nécessaires au développement de
+        l'application.</p>
+      references:
+        - >-
+          https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/01-Information_Gathering/03-Review_Webserver_Metafiles_for_Information_Leakage
+        - 'https://cwe.mitre.org/data/definitions/200.html'
+      customFields: []
+  category: La collecte d'informations
+- cvssv3: 'CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N'
+  details:
+    - locale: fr
+      title: Divulgation d'informations sensibles dans le fichier 'humans.txt'
+      vulnType: OWASP WSTG
+      description: humans.txt
+      observation: "<ul><li><p>Confidentialité\_: lire les données de l'application\_: l'attaquant peut être en mesure de lire des informations sensibles</p></li></ul>"
+      remediation: humans.txt
+      references:
+        - >-
+          https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/01-Information_Gathering/03-Review_Webserver_Metafiles_for_Information_Leakage
+        - 'https://cwe.mitre.org/data/definitions/200.html'
+      customFields: []
+  category: La collecte d'informations
+- cvssv3: 'CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N'
+  details:
+    - locale: fr
+      title: Divulgation d'informations sensibles dans le code source
+      vulnType: OWASP WSTG
+      description: >-
+        <p>Cette situation se produit lorsque l'analyse d'un fichier téléchargé
+        sur un serveur Web révèle des informations relatives au serveur qui
+        peuvent être utilisées pour planifier de nouvelles attaques, telles que
+        le type et la version des applications utilisées, les composants ou les
+        extensions utilisés.
+      observation: "<ul><li><p>Confidentialité\_: lire les données de l'application\_: l'attaquant peut être en mesure de lire des informations sensibles</p></li></ul>"
+      remediation: >-
+        <p>Pour éviter les fuites d'informations sensibles, le code source HTML
+        envoyé par le serveur doit être modifié.</p>
+      references:
+        - >-
+          https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/01-Information_Gathering/05-Review_Webpage_Content_for_Information_Leakage
+        - 'https://cwe.mitre.org/data/definitions/540.html'
+      customFields: []
+  category: La collecte d'informations
+- cvssv3: 'CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N'
+  details:
+    - locale: fr
+      title: Divulgation d'informations sensibles car le mode débogage est activé
+      vulnType: OWASP WSTG
+      description: paramètre d'activation de débogage
+      observation: "<ul><li><p>Confidentialité\_: lire les données de l'application\_: l'attaquant peut être en mesure de lire des informations sensibles</p></li></ul>"
+      remediation: >-
+        <p>Les applications de production ne devraient jamais générer
+        d'informations internes telles que des traces de pile et des messages
+        d'erreur, à moins qu'elles ne les consignent directement dans un journal
+        que l'utilisateur final ne peut pas voir.
+      references:
+        - 'https://cwe.mitre.org/data/definitions/497.html'
+      customFields: []
+  category: La collecte d'informations
+- cvssv3: 'CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N'
+  details:
+    - locale: fr
+      title: Divulgation d'informations sensibles (génériques)
+      vulnType: OWASP WSTG
+      description: >-
+        <p>Un mot de passe, par exemple, est une information sensible qui peut
+        être précieuse en soi ou être utilisée pour lancer d'autres attaques
+        plus graves (comme l'obtention d'un message d'erreur incontrôlé).
+      observation: "<ul><li><p>Confidentialité\_: lire les données de l'application\_: l'attaquant peut être en mesure de lire des informations sensibles</p></li></ul>"
+      remediation: >-
+        <p>Créez des zones « sûres » au sein du système où les limites de
+        confiance peuvent être clairement définies.
+      references:
+        - >-
+          https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/01-Information_Gathering/05-Review_Webpage_Content_for_Information_Leakage
+        - 'https://cwe.mitre.org/data/definitions/200.html'
+      customFields: []
+  category: La collecte d'informations
+- cvssv3: 'CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N'
+  details:
+    - locale: fr
+      title: >-
+        Divulgation des informations d'identification (fuite des informations
+        d'identification)
+      vulnType: OWASP WSTG
+      description: >-
+        <p>Il a été possible de vérifier et de vérifier l'existence de fichiers
+        contenant des informations sensibles, telles que des informations
+        d'identification valides pour accéder à d'autres systèmes, sur divers
+        points de terminaison.
+      observation: "<ul><li><p>Confidentialité\_: lire les données de l'application\_: l'attaquant peut être en mesure de lire des informations sensibles</p></li></ul>"
+      remediation: >-
+        <p>Quel que soit le logiciel pour lequel ces identifiants utilisateur
+        sont utilisés, il n'est jamais conseillé d'exposer des fichiers
+        sensibles qui exposent les identifiants utilisateur.</p>
+      references:
+        - 'https://cwe.mitre.org/data/definitions/200.html'
+        - 'https://cwe.mitre.org/data/definitions/359.html'
+      customFields: []
+  category: La collecte d'informations
+- cvssv3: 'CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N'
+  details:
+    - locale: fr
+      title: Utilisation d'informations d'identification codées en dur
+      vulnType: OWASP WSTG
+      description: >-
+        <p>Pour son propre cryptage interne des données, ses communications
+        sortantes avec des composants externes et son authentification entrante,
+        le logiciel dispose d'informations d'identification codées en dur,
+        telles qu'un mot de passe ou une clé cryptographique.
+      observation: "<ul><li><p>Contrôle d'accès\_: contourner le mécanisme de protection\_: si des mots de passe codés en dur sont utilisés, il est presque certain que des utilisateurs malveillants auront accès au compte en question.</p></li><li"
+      remediation: >-
+        <p>Au lieu des secrets et clés d'API statiques, utilisez des jetons de
+        session.</p>
+      references:
+        - 'https://cwe.mitre.org/data/definitions/798.html'
+      customFields: []
+  category: La collecte d'informations
+- cvssv3: 'CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N'
+  details:
+    - locale: fr
+      title: >-
+        Divulgation d'informations sensibles dans les métadonnées des fichiers
+        disponibles dans l'application
+      vulnType: OWASP WSTG
+      description: "<p>Le terme «\_métadonnées\_» fait référence à des informations sur un document qui sont principalement de nature descriptive."
+      observation: "<ul><li><p>Confidentialité\_: lire les données de l'application\_: l'attaquant peut être en mesure de lire des informations sensibles</p></li></ul>"
+      remediation: >-
+        <p>Il est conseillé que tous les fichiers disponibles dans l'application
+        voient leurs métadonnées supprimées avant d'être rendus accessibles au
+        réseau afin de résoudre cette vulnérabilité.</p>
+      references:
+        - >-
+          https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/01-Information_Gathering/05-Review_Webpage_Content_for_Information_Leakage
+        - 'https://cwe.mitre.org/data/definitions/200.html'
+        - 'https://capec.mitre.org/data/definitions/118.html'
+      customFields: []
+  category: La collecte d'informations
+- cvssv3: 'CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N'
+  details:
+    - locale: fr
+      title: Divulgation d'informations sensibles dans le contenu par défaut
+      vulnType: OWASP WSTG
+      description: >-
+        <p>Cela se produit lorsque les fichiers par défaut restent ouverts après
+        l'installation d'un service ou d'une application.
+      observation: "<ul><li><p>Confidentialité\_: lire les données de l'application\_: l'attaquant peut être en mesure de lire des informations sensibles</p></li></ul>"
+      remediation: >-
+        <p>Afin de résoudre ce problème, tous les fichiers par défaut qui ne
+        sont pas nécessaires au fonctionnement du serveur doivent être
+        supprimés, y compris les pages par défaut qui ont été installées après
+        le serveur.</p>
+      references:
+        - >-
+          https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/01-Information_Gathering/02-Fingerprint_Web_Server
+        - >-
+          https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/01-Information_Gathering/04-Enumerate_Applications_on_Webserver
+        - >-
+          https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/01-Information_Gathering/08-Fingerprint_Web_Application_Framework
+      customFields: []
+  category: La collecte d'informations
+- cvssv3: 'CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N'
+  details:
+    - locale: fr
+      title: Divulgation des chemins et répertoires du serveur interne
+      vulnType: OWASP WSTG
+      description: >-
+        <p>Ce fait se produit chaque fois que le chemin absolu d'un serveur Web
+        ou d'une application hébergée sur celui-ci peut être déterminé à l'aide
+        de n'importe quel mécanisme, comme l'envoi d'un message d'erreur, le
+        suivi de l'envoi de paramètres, etc.</p><p>
+      observation: "<ul><li><p>Confidentialité\_: lire les données de l'application\_: l'attaquant peut être en mesure de lire des informations sensibles</p></li></ul>"
+      remediation: >-
+        <p>En fonction du type de faille qui a conduit à la divulgation, la
+        meilleure marche à suivre variera.
+      references:
+        - >-
+          https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/01-Information_Gathering/04-Enumerate_Applications_on_Webserver
+        - 'https://cwe.mitre.org/data/definitions/538.html'
+        - 'https://www.owasp.org/index.php/Full_Path_Disclosure'
+      customFields: []
+  category: La collecte d'informations
+- cvssv3: 'CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N'
+  details:
+    - locale: fr
+      title: Liste du répertoire
+      vulnType: OWASP WSTG
+      description: >-
+        <p>La liste des répertoires est une fonctionnalité qui, lorsqu'elle est
+        activée, amène les serveurs Web à répertorier le contenu d'un répertoire
+        lorsqu'aucun fichier d'index (par exemple index.php ou index.html) n'est
+        présent.
+      observation: "<ul><li><p>Confidentialité\_: lecture de fichiers ou de répertoires\_: l'exposition du contenu d'un répertoire peut permettre à un attaquant d'accéder au code source ou de fournir des informations utiles à l'attaquant pour concevoir des exploits, telles que les heures de création de fichiers ou"
+      remediation: <p>Configurez correctement.
+      references:
+        - >-
+          https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/01-Information_Gathering/04-Enumerate_Applications_on_Webserver
+        - 'https://cwe.mitre.org/data/definitions/548.html'
+      customFields: []
+  category: La collecte d'informations
+- cvssv3: 'CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N'
+  details:
+    - locale: fr
+      title: Absence de cryptage SSL/TLS
+      vulnType: OWASP WSTG
+      description: >-
+        <p>Au lieu du protocole HTTPs, HTTP est utilisé pour communiquer avec le
+        serveur Web.
+      observation: "<ul><li><p>Confidentialité\_: lecture des données de l'application\_: un attaquant peut être en mesure de déchiffrer les données à l'aide d'attaques par force brute.</p></li></ul>"
+      remediation: <p>Le serveur Web doit être configuré pour prendre en charge HTTP.
+      references:
+        - >-
+          https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/01-Information_Gathering/04-Enumerate_Applications_on_Webserver
+        - >-
+          https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/09-Testing_for_Weak_Cryptography/01-Testing_for_Weak_Transport_Layer_Security
+        - >-
+          https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/09-Testing_for_Weak_Cryptography/04-Testing_for_Weak_Encryption
+        - 'https://cwe.mitre.org/data/definitions/311.html'
+        - >-
+          https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html
+        - >-
+          https://cheatsheetseries.owasp.org/cheatsheets/Transport_Layer_Protection_Cheat_Sheet.html
+        - >-
+          https://wiki.owasp.org/index.php/Testing_for_Weak_SSL/TLS_Ciphers,_Insufficient_Transport_Layer_Protection_(OTG-CRYPST-001)
+      customFields: []
+  category: Cryptage SSL/TLS
+- cvssv3: 'CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N'
+  details:
+    - locale: fr
+      title: Contenu mixte
+      vulnType: OWASP WSTG
+      description: >-
+        <p>Le contenu téléchargé à l'aide du protocole HTTP est utilisé par
+        l'application Web, qui utilise le protocole HTTPs.
+      observation: "<ul><li><p>Confidentialité\_: lire les données de l'application\_: l'attaquant peut être en mesure de lire des informations sensibles</p></li></ul>"
+      remediation: <p>Le serveur Web doit être configuré pour prendre en charge HTTP.
+      references:
+        - >-
+          https://owasp.org/www-project-web-security-testing-guide/stable/4-Web_Application_Security_Testing/09-Testing_for_Weak_Cryptography/01-Testing_for_Weak_Transport_Layer_Security
+        - >-
+          https://owasp.org/www-project-web-security-testing-guide/stable/4-Web_Application_Security_Testing/09-Testing_for_Weak_Cryptography/03-Testing_for_Sensitive_Information_Sent_via_Unencrypted_Channels
+        - 'https://cwe.mitre.org/data/definitions/16.html'
+        - 'https://cwe.mitre.org/data/definitions/319.html'
+        - 'https://capec.mitre.org/data/definitions/117.html'
+      customFields: []
+  category: Cryptage SSL/TLS
+- cvssv3: 'CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N'
+  details:
+    - locale: fr
+      title: Algorithmes de chiffrement faibles
+      vulnType: OWASP WSTG
+      description: >-
+        <p>De nombreuses failles dans la configuration du service SSL/TLS sur le
+        serveur Web pourraient entraîner une communication non sécurisée entre
+        le client et le serveur.</p><p>Les algorithmes de chiffrement utilisés
+        par le service SSL/TLS exécuté sur le serveur sont
+      observation: "<ul><li><p>Confidentialité\_: lire les données de l'application\_: l'attaquant peut être en mesure de lire des informations sensibles</p></li><li><p>Contrôle d'accès\_: modifier les données de l'application\_: un attaquant peut tromper un"
+      remediation: >-
+        <p>Autoriser uniquement les connexions TLS avec un cryptage considéré
+        comme sécurisé dans les versions 1.2 ou 1.3.</p>
+      references:
+        - >-
+          https://owasp.org/www-project-web-security-testing-guide/stable/4-Web_Application_Security_Testing/09-Testing_for_Weak_Cryptography/04-Testing_for_Weak_Encryption
+        - 'https://cwe.mitre.org/data/definitions/310.html'
+        - 'https://cwe.mitre.org/data/definitions/327.html'
+      customFields: []
+  category: Cryptage SSL/TLS
+- cvssv3: 'CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N'
+  details:
+    - locale: fr
+      title: Utilisation de versions obsolètes du protocole SSL/TLS
+      vulnType: OWASP WSTG
+      description: >-
+        <p>Pour empêcher un attaquant de lire ou de modifier les données
+        envoyées entre le client et le serveur, celles-ci doivent être cryptées
+        et protégées.
+      observation: "<ul><li><p>Confidentialité\_: lire les données de l'application\_: l'attaquant peut être en mesure de lire des informations sensibles</p></li></ul>"
+      remediation: >-
+        <p>Sur le serveur Web, les variantes non sécurisées du protocole SSL/TLS
+        doivent être désactivées.</p>
+      references:
+        - >-
+          https://owasp.org/www-project-web-security-testing-guide/stable/4-Web_Application_Security_Testing/09-Testing_for_Weak_Cryptography/01-Testing_for_Weak_Transport_Layer_Security
+        - 'https://cwe.mitre.org/data/definitions/326.html'
+      customFields: []
+  category: Cryptage SSL/TLS
+- cvssv3: 'CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N'
+  details:
+    - locale: fr
+      title: Renégociation sécurisée initiée par le client
+      vulnType: OWASP WSTG
+      description: >-
+        <p>Côté serveur par rapport au côté client, davantage de ressources sont
+        utilisées lors de la négociation de connexion SSL/TLS.
+      observation: "<ul><li><p>Confidentialité\_: lire les données de l'application\_: l'attaquant peut être en mesure de lire des informations sensibles</p></li></ul>"
+      remediation: >-
+        <p>Pour corriger la vulnérabilité, il est conseillé d'appliquer le
+        correctif le plus récent.
+      references:
+        - >-
+          https://owasp.org/www-project-web-security-testing-guide/stable/4-Web_Application_Security_Testing/09-Testing_for_Weak_Cryptography/01-Testing_for_Weak_Transport_Layer_Security
+      customFields: []
+  category: Cryptage SSL/TLS
+- cvssv3: 'CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N'
+  details:
+    - locale: fr
+      title: Certificat numérique non fiable
+      vulnType: OWASP WSTG
+      description: >-
+        <p>Le certificat numérique du serveur n'est pas sécurisé et peu fiable
+        en raison de certains paramètres incorrects, ce qui augmente le risque
+        de confidentialité ou de fiabilité du système.</p>
+      observation: "<ul><li><p>Autre\_: impact technique\_: varie selon le contexte</p></li></ul>"
+      remediation: >-
+        <p>Il est conseillé de créer un certificat numérique que les navigateurs
+        reconnaissent comme fiable (délivré par une autorité reconnue, dans la
+        durée de validité et avec le nom usuel du certificat égal au nom du site
+        Web proposant les services).</
+      references:
+        - >-
+          https://owasp.org/www-project-web-security-testing-guide/stable/4-Web_Application_Security_Testing/09-Testing_for_Weak_Cryptography/01-Testing_for_Weak_Transport_Layer_Security
+        - >-
+          https://owasp.org/www-project-web-security-testing-guide/stable/4-Web_Application_Security_Testing/09-Testing_for_Weak_Cryptography/04-Testing_for_Weak_Encryption
+        - 'https://cwe.mitre.org/data/definitions/16.html'
+      customFields: []
+  category: Cryptage SSL/TLS
+- cvssv3: 'CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:N'
+  details:
+    - locale: fr
+      title: Vérification incorrecte de la révocation du certificat (agrafage OCSP)
+      vulnType: OWASP WSTG
+      description: >-
+        <p>Pour arrêter les attaques de l'homme du milieu contre les
+        utilisateurs de vos applications, vous devez toujours pouvoir rappeler
+        rapidement ces certificats chaque fois que votre autorité de
+        certification perd la confiance.</p>
+      observation: "<ul><li><p>Contrôle d'accès\_: obtenir des privilèges ou assumer une identité\_: la confiance peut être attribuée à une entité qui n'est pas celle qu'elle prétend être.</p></li><li><p>Autre\_:"
+      remediation: >-
+        <p>Le fichier de clés sur l'ordinateur de signature sécurisé, qui est
+        également l'endroit où sont stockées les copies signées et non signées
+        de la zone, contient l'ancre de confiance pour la zone donnée.
+      references:
+        - 'https://cwe.mitre.org/data/definitions/299.html'
+      customFields: []
+  category: Cryptage SSL/TLS
+- cvssv3: 'CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N'
+  details:
+    - locale: fr
+      title: Certificats d'autorité de certification
+      vulnType: OWASP WSTG
+      description: >-
+        <p>Une organisation qui émet des certificats numériques est connue sous
+        le nom d'autorité de certification (CA) dans le domaine de la
+        cryptographie.
+      observation: "<ul><li><p>Contrôle d'accès\_: obtenir des privilèges ou assumer une identité\_: la confiance peut être attribuée à une entité qui n'est pas celle qu'elle prétend être.</p></li><li><p>Autre\_:"
+      remediation: >-
+        <p>Installez un certificat de confiance provenant d'une autorité de
+        certification racine réputée sur le serveur.</p>
+      references:
+        - 'https://cwe.mitre.org/data/definitions/299.html'
+      customFields: []
+  category: Cryptage SSL/TLS
+- cvssv3: 'CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:N'
+  details:
+    - locale: fr
+      title: Assurer la sécurité globale
+      vulnType: OWASP WSTG
+      description: >-
+        <p>En raison du fait qu'il fait l'objet de beaucoup d'attention lors du
+        développement, le mécanisme d'authentification principal est souvent une
+        bonne fonctionnalité renforcée.
+      observation: "<ul><li><p>Autre\_: Autre\_: l'exposition d'une fonctionnalité critique fournit essentiellement à un attaquant le niveau de privilège de cette fonctionnalité."
+      remediation: >-
+        <p>Assurez-vous que toutes les fonctionnalités d'authentification de
+        l'identité du compte (telles que le profil de mise à jour, le mot de
+        passe oublié, le jeton désactivé/perdu, le service d'assistance ou le
+        SVI) qui pourraient vous permettre de retrouver l'accès à votre compte
+        sont au moins aussi sécurisées contre le piratage que les
+        fonctionnalités principales.
+      references:
+        - 'https://cwe.mitre.org/data/definitions/306.html'
+      customFields: []
+  category: Gestion de la configuration et du déploiement
+- cvssv3: 'CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N'
+  details:
+    - locale: fr
+      title: >-
+        Version du système d'exploitation obsolète (vulnérabilités associées
+        connues)
+      vulnType: OWASP WSTG
+      description: >-
+        <p>Lorsque la version du système d'exploitation du serveur exécutant
+        l'application peut être déterminée, ce problème se produit.</p><p>Tout
+        type d'informations relatives à la technologie qui sous-tend
+        l'application Web doit toujours être gardée secrète afin de
+      observation: "<ul><li><p>Autre\_: Dégradation de la qualité\_: L'attaquant utilise une fonction qui n'est pas mise à jour</p></li></ul>"
+      remediation: >-
+        <p>Il est conseillé de mettre à jour le système d'exploitation vers la
+        version la plus récente.</p>
+      references:
+        - >-
+          https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/01-Test_Network_Infrastructure_Configuration
+        - 'https://cwe.mitre.org/data/definitions/477.html'
+      customFields: []
+  category: Gestion de la configuration et du déploiement
+- cvssv3: 'CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N'
+  details:
+    - locale: fr
+      title: Dépendances et bibliothèques obsolètes
+      vulnType: OWASP WSTG
+      description: >-
+        <p>Les chercheurs en sécurité signalent et stockent les vulnérabilités
+        qu'ils trouvent dans les bibliothèques, modules, frameworks,
+        plates-formes ou systèmes d'exploitation dans la liste CVE.
+      observation: "<ul><li><p>Autre\_: Réduire la maintenabilité\_: l'attaquant pourrait trouver des vulnérabilités de composants obsolètes et les utiliser pour exploiter de nouveaux vecteurs d'attaque.</p></li></ul>"
+      remediation: >-
+        <p>Le principal conseil est de toujours utiliser les dépendances et
+        bibliothèques les plus récentes proposées par le fabricant.
+      references:
+        - >-
+          https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/01-Test_Network_Infrastructure_Configuration
+        - 'https://cwe.mitre.org/data/definitions/477.html'
+      customFields: []
+  category: Gestion de la configuration et du déploiement
+- cvssv3: 'CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N'
+  details:
+    - locale: fr
+      title: Identification des panels de gestion
+      vulnType: OWASP WSTG
+      description: >-
+        <p>Il n'est pas conseillé que les panneaux d'administration ou les
+        panneaux d'authentification de diverses applications soient accessibles
+        publiquement sur Internet.
+      observation: "<ul><li><p>Confidentialité\_: lire les données de l'application\_: l'attaquant peut être en mesure de lire des informations sensibles</p></li></ul>"
+      remediation: >-
+        <p>Il est conseillé d'utiliser des VPN pour se connecter aux ressources
+        de l'organisation au lieu d'ouvrir des panneaux d'administration ou
+        d'authentification à Internet.</p>
+      references:
+        - >-
+          https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/05-Enumerate_Infrastructure_and_Application_Admin_Interfaces
+        - 'https://cwe.mitre.org/data/definitions/16.html'
+      customFields: []
+  category: Gestion de la configuration et du déploiement
+- cvssv3: 'CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N'
+  details:
+    - locale: fr
+      title: Configuration du serveur non renforcée
+      vulnType: OWASP WSTG
+      description: >-
+        <p>Toute partie de la pile d'applications, y compris les services
+        réseau, la plate-forme, le serveur Web, le serveur d'applications, la
+        base de données, les frameworks, le code personnalisé, les machines
+        virtuelles préinstallées, les conteneurs ou le stockage, est susceptible
+        d'être mal configurée en matière de sécurité.</p
+      observation: "<ul><li><p>Confidentialité\_: lire les données de l'application\_: l'attaquant peut être en mesure de lire des informations sensibles</p></li></ul>"
+      remediation: "<p>Mise en œuvre de procédures d'installation sécurisées, telles que\_:</p><ul><li><p>Un processus de renforcement reproductible qui permet de déployer rapidement et facilement un autre environnement correctement verrouillé."
+      references:
+        - >-
+          https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/05-Enumerate_Infrastructure_and_Application_Admin_Interfaces
+        - 'https://cwe.mitre.org/data/definitions/16.html'
+      customFields: []
+  category: Gestion de la configuration et du déploiement
+- cvssv3: 'CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N'
+  details:
+    - locale: fr
+      title: Informations sensibles dans les journaux accessibles
+      vulnType: OWASP WSTG
+      description: >-
+        <p>Un journal est un enregistrement des activités qui se déroulent au
+        sein des réseaux et des systèmes d'une organisation.
+      observation: "<ul><li><p>Confidentialité\_: lire les données de l'application\_: l'attaquant peut être en mesure de lire des informations sensibles</p></li></ul>"
+      remediation: >-
+        <p>Il est recommandé de conserver les journaux dans un emplacement
+        distinct et non sur le serveur Web lui-même.
+      references:
+        - >-
+          https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/02-Test_Application_Platform_Configuration
+        - 'https://cwe.mitre.org/data/definitions/532.html'
+      customFields: []
+  category: Gestion de la configuration et du déploiement
+- cvssv3: 'CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N'
+  details:
+    - locale: fr
+      title: Identification du fichier de sauvegarde
+      vulnType: OWASP WSTG
+      description: >-
+        <p>Les fichiers qui n'ont aucun rapport avec l'application mais qui sont
+        créés suite à la modification de fichiers d'application, après avoir
+        effectué des sauvegardes en cours d'utilisation ou en laissant des
+        fichiers obsolètes ou non référencés dans l'arborescence Web constituent
+        une source importante de vulnérabilité.
+      observation: "<ul><li><p>Confidentialité\_: lire les données de l'application\_: l'attaquant peut être en mesure de lire des informations sensibles</p></li></ul>"
+      remediation: >-
+        <p>Pour supprimer le risque, il est nécessaire de supprimer le fichier
+        de sauvegarde découvert.
+      references:
+        - >-
+          https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/04-Review_Old_Backup_and_Unreferenced_Files_for_Sensitive_Information
+        - 'https://cwe.mitre.org/data/definitions/200.html'
+        - 'https://cwe.mitre.org/data/definitions/530.html'
+      customFields: []
+  category: Gestion de la configuration et du déploiement
+- cvssv3: 'CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N'
+  details:
+    - locale: fr
+      title: Méthodes HTTP non sécurisées activées
+      vulnType: OWASP WSTG
+      description: >-
+        <p>Différentes techniques sont disponibles via HTTP pour effectuer des
+        opérations sur le serveur Web (la norme HTTP 1.1 les appelle méthodes,
+        mais elles sont aussi communément décrites comme des verbes).
+      observation: "<ul><li><p>Autre\_: impact technique\_: varie selon le contexte</p></li></ul>"
+      remediation: >-
+        <p>Les méthodes jugées superflues dans la configuration du serveur
+        doivent être désactivées.</p>
+      references:
+        - >-
+          https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/06-Test_HTTP_Methods
+        - 'https://cwe.mitre.org/data/definitions/16.html'
+      customFields: []
+  category: Gestion de la configuration et du déploiement
+- cvssv3: 'CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N'
+  details:
+    - locale: fr
+      title: Manque d'en-têtes HTTP de sécurité
+      vulnType: OWASP WSTG
+      description: >-
+        <p>Les en-têtes de sécurité sont implémentés sous forme d'en-têtes de
+        réponse HTTP qui limitent le potentiel d'exploitation des vulnérabilités
+        côté client en indiquant au navigateur comment se comporter dans des
+        circonstances spécifiques.
+      observation: "<ul><li><p>Contrôle d'accès\_: mécanisme de protection contre le contournement\_: les contrôles de contrôle d'accès pour des données ou fonctionnalités utilisateur spécifiques peuvent être contournés.</p></li></ul>"
+      remediation: >-
+        <p>La mise en œuvre de tous les en-têtes HTTP de sécurité dans les
+        réponses du serveur est recommandée.
+      references:
+        - >-
+          https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/07-Test_HTTP_Strict_Transport_Security
+        - >-
+          https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/12-Test_for_Content_Security_Policy
+        - 'https://cwe.mitre.org/data/definitions/16.html'
+        - 'https://cwe.mitre.org/data/definitions/693.html'
+        - 'https://wiki.owasp.org/index.php/OWASP_Secure_Headers_Project'
+        - >-
+          https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration
+      customFields: []
+  category: Gestion de la configuration et du déploiement
+- cvssv3: 'CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N'
+  details:
+    - locale: fr
+      title: Absence d’en-tête HSTS (HTTP Strict Transport Security)
+      vulnType: OWASP WSTG
+      description: "<p>L'en-tête HTTP «\_stricte transport security\_» (HSTS) est utilisé pour contrecarrer les tentatives d'interception de communications, de cookies, etc. Ce mécanisme permet à un serveur Web de déclarer que seules les connexions HTTP sécurisées (HTTP sur TLS/SSL) sont autorisées pour"
+      observation: "<ul><li><p>Contrôle d'accès\_: obtenir des privilèges ou assumer une identité\_: un attaquant pourrait obtenir un accès non autorisé au système en récupérant les informations d'authentification d'un utilisateur légitime</p></li></ul>"
+      remediation: >-
+        <p>Définissez l'en-tête HTTP Strict-Transport-Security, qui demande au
+        navigateur client de rediriger automatiquement les requêtes reçues via
+        le protocole HTTP vers le protocole sécurisé HTTPS plutôt que d'utiliser
+        ou de forcer un protocole non sécurisé.</p><p><Strict
+      references:
+        - >-
+          https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/07-Test_HTTP_Strict_Transport_Security
+        - >-
+          https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/12-Test_for_Content_Security_Policy
+        - 'https://cwe.mitre.org/data/definitions/16.html'
+        - 'https://cwe.mitre.org/data/definitions/693.html'
+        - 'https://wiki.owasp.org/index.php/OWASP_Secure_Headers_Project'
+        - >-
+          https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration
+      customFields: []
+  category: Gestion de la configuration et du déploiement
+- cvssv3: 'CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N'
+  details:
+    - locale: fr
+      title: Absence d'en-tête X-Frame-Options
+      vulnType: OWASP WSTG
+      description: >-
+        <p>Un utilisateur est amené à utiliser des fonctionnalités d'un site Web
+        caché en cliquant sur un autre contenu d'un faux site Web en utilisant
+        la vulnérabilité Clickjacking.
+      observation: "<ul><li><p>Contrôle d'accès\_: obtenir des privilèges ou assumer une identité\_: un attaquant pourrait obtenir des privilèges en modifiant ou en lisant directement des données critiques, ou en accédant à des fonctionnalités privilégiées et insuffisamment protégées.</p></li><"
+      remediation: >-
+        <p>L'en-tête X-Frame-Options est pris en charge par la plupart des
+        navigateurs Web contemporains.
+      references:
+        - >-
+          https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/07-Test_HTTP_Strict_Transport_Security
+        - >-
+          https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/12-Test_for_Content_Security_Policy
+        - 'https://cwe.mitre.org/data/definitions/16.html'
+        - 'https://cwe.mitre.org/data/definitions/693.html'
+        - 'https://wiki.owasp.org/index.php/OWASP_Secure_Headers_Project'
+        - >-
+          https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration
+      customFields: []
+  category: Gestion de la configuration et du déploiement
+- cvssv3: 'CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N'
+  details:
+    - locale: fr
+      title: Absence d’en-tête de politique de sécurité du contenu (CSP)
+      vulnType: OWASP WSTG
+      description: >-
+        <p>Un en-tête de réponse HTTP qui augmente la sécurité est appelé
+        Content-Security-Policy.
+      observation: "<ul><li><p>Contrôle d'accès\_: obtenir des privilèges ou assumer une identité\_: un attaquant pourrait obtenir des privilèges en modifiant ou en lisant directement des données critiques, ou en accédant à des fonctionnalités privilégiées et insuffisamment protégées.</p></li><"
+      remediation: >-
+        <p>En incluant l'en-tête Content-Security-Policy dans les en-têtes de
+        réponse HTTP, qui indique au navigateur d'appliquer les politiques
+        souhaitées, vous pouvez activer CSP sur un site Web.
+      references:
+        - >-
+          https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/07-Test_HTTP_Strict_Transport_Security
+        - >-
+          https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/12-Test_for_Content_Security_Policy
+        - 'https://cwe.mitre.org/data/definitions/16.html'
+        - 'https://cwe.mitre.org/data/definitions/693.html'
+        - 'https://wiki.owasp.org/index.php/OWASP_Secure_Headers_Project'
+        - >-
+          https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration
+      customFields: []
+  category: Gestion de la configuration et du déploiement
+- cvssv3: 'CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N'
+  details:
+    - locale: fr
+      title: Absence d'en-tête Cache Control
+      vulnType: OWASP WSTG
+      description: >-
+        <p>Les directives pour les mécanismes de mise en cache sont spécifiées
+        dans l'en-tête HTTP Cache-Control.</p>
+      observation: "<ul><li><p>Contrôle d'accès\_: mécanisme de protection contre le contournement\_: les contrôles de contrôle d'accès pour des données ou fonctionnalités utilisateur spécifiques peuvent être contournés.</p></li></ul>"
+      remediation: >-
+        <p>Créez un en-tête Cache-Control sur votre serveur Web avec les
+        instructions nécessaires.
+      references:
+        - >-
+          https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/07-Test_HTTP_Strict_Transport_Security
+        - >-
+          https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/12-Test_for_Content_Security_Policy
+        - 'https://cwe.mitre.org/data/definitions/16.html'
+        - 'https://cwe.mitre.org/data/definitions/693.html'
+        - 'https://wiki.owasp.org/index.php/OWASP_Secure_Headers_Project'
+        - >-
+          https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration
+      customFields: []
+  category: Gestion de la configuration et du déploiement
+- cvssv3: 'CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N'
+  details:
+    - locale: fr
+      title: Absence d'en-tête Pragma
+      vulnType: OWASP WSTG
+      description: >-
+        <p>L'en-tête Pragma est un en-tête spécifique à l'implémentation qui
+        peut avoir un impact sur la chaîne requête-réponse de plusieurs
+        manières.
+      observation: "<ul><li><p>Contrôle d'accès\_: mécanisme de protection contre le contournement\_: les contrôles de contrôle d'accès pour des données ou fonctionnalités utilisateur spécifiques peuvent être contournés.</p></li></ul>"
+      remediation: >-
+        <p>L'en-tête Cache-Control est le moyen idéal pour spécifier une
+        politique de mise en cache lorsqu'au moins HTTP/1.1 est utilisé dans les
+        réponses du serveur.
+      references:
+        - >-
+          https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/07-Test_HTTP_Strict_Transport_Security
+        - >-
+          https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/12-Test_for_Content_Security_Policy
+        - 'https://cwe.mitre.org/data/definitions/16.html'
+        - 'https://cwe.mitre.org/data/definitions/693.html'
+        - 'https://wiki.owasp.org/index.php/OWASP_Secure_Headers_Project'
+        - >-
+          https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration
+      customFields: []
+  category: Gestion de la configuration et du déploiement
+- cvssv3: 'CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N'
+  details:
+    - locale: fr
+      title: Absence d'en-tête de stratégie de fonctionnalité
+      vulnType: OWASP WSTG
+      description: >-
+        <p>Les développeurs Web peuvent activer, désactiver et modifier de
+        manière sélective le comportement d'API et de fonctionnalités Web
+        spécifiques dans le navigateur à l'aide de l'en-tête Feature-Policy.
+      observation: "<ul><li><p>Contrôle d'accès\_: mécanisme de protection contre le contournement\_: les contrôles de contrôle d'accès pour des données ou fonctionnalités utilisateur spécifiques peuvent être contournés.</p></li></ul>"
+      remediation: "<p>Vous trouverez ci-dessous un exemple de la manière d'ajouter l'en-tête Feature-Policy aux réponses du serveur Web\_:\_</p><p><Feature-Policy\_: vibre 'self'\_;"
+      references:
+        - >-
+          https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/07-Test_HTTP_Strict_Transport_Security
+        - >-
+          https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/12-Test_for_Content_Security_Policy
+        - 'https://cwe.mitre.org/data/definitions/16.html'
+        - 'https://cwe.mitre.org/data/definitions/693.html'
+        - 'https://wiki.owasp.org/index.php/OWASP_Secure_Headers_Project'
+        - >-
+          https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration
+      customFields: []
+  category: Gestion de la configuration et du déploiement
+- cvssv3: 'CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N'
+  details:
+    - locale: fr
+      title: Absence d'en-tête de politique de référence
+      vulnType: OWASP WSTG
+      description: >-
+        <p>Les requêtes effectuées à partir d'un document et les navigations à
+        partir de ce document sont associées à un en-tête Referer.
+      observation: "<ul><li><p>Contrôle d'accès\_: mécanisme de protection contre le contournement\_: les contrôles de contrôle d'accès pour des données ou fonctionnalités utilisateur spécifiques peuvent être contournés.</p></li></ul>"
+      remediation: >-
+        <p>Politique du référent La quantité de données du référent, transmises
+        via l'en-tête Referer, qui doivent être incluses dans les requêtes est
+        contrôlée par l'en-tête HTTP.
+      references:
+        - 'https://cwe.mitre.org/data/definitions/116.html'
+      customFields: []
+  category: Gestion de la configuration et du déploiement
+- cvssv3: 'CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N'
+  details:
+    - locale: fr
+      title: Absence d'en-tête X-Content-Type-Options
+      vulnType: OWASP WSTG
+      description: >-
+        <p>Afin de vous protéger contre le téléchargement de fichiers
+        réfléchissant et d'autres types d'injections, certains rappels d'API
+        doivent avoir des en-têtes de sécurité correctement configurés.</p><p>De
+        plus, vérifiez si les entrées de l'utilisateur sont reflétées dans la
+        réponse de l'API et si
+      observation: "<ul><li><p>Contrôle d'accès\_: mécanisme de protection contre le contournement\_: les contrôles de contrôle d'accès pour des données ou fonctionnalités utilisateur spécifiques peuvent être contournés.</p></li></ul>"
+      remediation: "<p>Assainissez les entrées de votre API\_;"
+      references:
+        - 'https://cwe.mitre.org/data/definitions/116.html'
+      customFields: []
+  category: Gestion de la configuration et du déploiement
+- cvssv3: 'CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N'
+  details:
+    - locale: fr
+      title: En-tête Anti-Caching (côté serveur)
+      vulnType: OWASP WSTG
+      description: >-
+        <p>Les en-têtes anti-caching empêchent le stockage des données sensibles
+        sur les proxys inverses, les équilibreurs de charge et les modules de
+        cache d'application.
+      observation: "<ul><li><p>Confidentialité\_: lire les données de l'application\_: l'attaquant peut être en mesure de lire des informations sensibles</p></li></ul>"
+      remediation: >-
+        <p>Cette vulnérabilité sera réduite si les en-têtes anti-caching sont
+        correctement implémentés.
+      references:
+        - 'https://cwe.mitre.org/data/definitions/524.html'
+      customFields: []
+  category: Gestion de la configuration et du déploiement
+- cvssv3: 'CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N'
+  details:
+    - locale: fr
+      title: En-tête Content-Type non sécurisé dans la réponse
+      vulnType: OWASP WSTG
+      description: >-
+        <p>La définition des en-têtes de contenu appropriés est cruciale pour
+        renforcer la sécurité de vos applications, car elle réduit votre
+        exposition aux attaques de téléchargement intempestif et aux sites Web
+        hébergeant du contenu téléchargé par les utilisateurs qui, en raison
+        d'une dénomination intelligente, MS Internet Explorer peut le confondre
+        avec un exécutable ou un fichier exécutable.
+      observation: "<ul><li><p>Contrôle d'accès\_: mécanisme de protection contre le contournement\_: les contrôles de contrôle d'accès pour des données ou fonctionnalités utilisateur spécifiques peuvent être contournés.</p></li></ul>"
+      remediation: "<p>Un exemple d'en-tête Content-type sécurisé serait\_:</p><p>Content-Type\_: text/html;"
+      references:
+        - 'https://cwe.mitre.org/data/definitions/173.html'
+      customFields: []
+  category: Gestion de la configuration et du déploiement
+- cvssv3: 'CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N'
+  details:
+    - locale: fr
+      title: Autorisations excessives de fichiers et de répertoires
+      vulnType: OWASP WSTG
+      description: >-
+        <p>Donner à une ressource un paramètre d'autorisation qui permet l'accès
+        à un groupe d'utilisateurs plus important que nécessaire comporte le
+        risque d'exposer des données sensibles ou de permettre à des personnes
+        non autorisées de modifier la ressource.
+      observation: "<ul><li><p>Confidentialité\_: Lire les données de l'application\_: Le code injecté pourrait accéder à des données/fichiers restreints.</p></li><li><p>Confidentialité\_: Lire des fichiers ou des répertoires\_: Un attaquant pourrait lire"
+      remediation: >-
+        <p>Définir correctement les autorisations de fichiers et de répertoires
+        aidera à résoudre cette vulnérabilité en empêchant les utilisateurs non
+        autorisés d'accéder inutilement à des ressources vitales.</p>
+      references:
+        - >-
+          https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/09-Test_File_Permission
+        - 'https://cwe.mitre.org/data/definitions/732.html'
+      customFields: []
+  category: Gestion de la configuration et du déploiement
+- cvssv3: 'CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L'
+  details:
+    - locale: fr
+      title: Allocation de ressources sans limites ni limitation
+      vulnType: OWASP WSTG
+      description: >-
+        <p>En violation de la politique de sécurité prévue pour cet acteur, le
+        logiciel alloue une ressource réutilisable ou un ensemble de ressources
+        au nom de l'acteur sans imposer de limitations sur la taille ou la
+        quantité de ressources pouvant être allouées.</p>
+      observation: "<ul><li><p>Disponibilité\_: DoS\_: consommation de ressources (autre)\_: lors de l'allocation de ressources sans limites, un attaquant pourrait empêcher d'autres systèmes, applications ou processus d'accéder au même type de ressource.</p></"
+      remediation: >-
+        <p>Exigences</p><ul><li><p>Spécifiez clairement les attentes minimales
+        et maximales en matière de capacités, et dictez les comportements
+        acceptables lorsque l'allocation des ressources atteint les
+        limites.</p></li></ul
+      references:
+        - 'https://cwe.mitre.org/data/definitions/770.html'
+      customFields: []
+  category: Gestion de la configuration et du déploiement
+- cvssv3: 'CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N'
+  details:
+    - locale: fr
+      title: Énumération des comptes (utilisateurs)
+      vulnType: OWASP WSTG
+      description: >-
+        <p>En raison d'erreurs de configuration ou de choix de conception
+        intentionnels, les applications Web indiquent souvent clairement si un
+        nom d'utilisateur existe déjà sur le système.
+      observation: "<ul><li><p>Confidentialité\_: lire les données de l'application\_: l'attaquant peut être en mesure de lire des informations sensibles</p></li><li><p>Contrôle d'accès\_: contourner le mécanisme de protection\_: le contrôle d'accès vérifie des informations spécifiques."
+      remediation: >-
+        <p>Il existe plusieurs recommandations pour éviter ce type de
+        vulnérabilités.
+      references:
+        - >-
+          https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/03-Identity_Management_Testing/04-Testing_for_Account_Enumeration_and_Guessable_User_Account
+        - 'https://cwe.mitre.org/data/definitions/203.html'
+        - 'https://cwe.mitre.org/data/definitions/204.html'
+        - 'https://cwe.mitre.org/data/definitions/200.html'
+      customFields: []
+  category: Gestion des identités
+- cvssv3: 'CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N'
+  details:
+    - locale: fr
+      title: Processus d’enregistrement des utilisateurs non sécurisé
+      vulnType: OWASP WSTG
+      description: >-
+        <p>La fourniture de l'accès au système aux utilisateurs est automatisée
+        (ou partiellement automatisée) par le processus d'enregistrement des
+        utilisateurs de certaines applications Web.
+      observation: "<ul><li><p>Contrôle d'accès\_: exécuter du code ou des commandes non autorisés\_: cette faiblesse peut conduire à l'exposition de ressources ou de fonctionnalités à des acteurs involontaires, fournissant éventuellement aux attaquants des informations sensibles ou même exécutant du code arbitraire.</p><"
+      remediation: >-
+        <p>Il est conseillé de mettre en place des exigences d'identification et
+        de vérification conformes aux exigences de sécurité des données
+        protégées par les informations d'identification.</p>
+      references:
+        - >-
+          https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/03-Identity_Management_Testing/02-Test_User_Registration_Process
+        - 'https://cwe.mitre.org/data/definitions/287.html'
+      customFields: []
+  category: Gestion des identités
+- cvssv3: 'CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:N'
+  details:
+    - locale: fr
+      title: >-
+        La fonctionnalité de connexion doit toujours générer un nouvel
+        identifiant de session
+      vulnType: OWASP WSTG
+      description: >-
+        <p>Un nouveau cookie de session doit être créé par l'application chaque
+        fois qu'un utilisateur est authentifié avec succès.</p>
+      observation: "<ul><li><p>Contrôle d'accès\_: obtenez des privilèges ou assumez votre identité\_: l'application n'invalide aucun identifiant de session existant et donne à un attaquant la possibilité de voler des sessions authentifiées.</p></li></ul>"
+      remediation: >-
+        <p>Après une connexion réussie, la fonctionnalité de connexion doit
+        toujours créer (et utiliser) un nouvel ID de session.
+      references:
+        - 'https://cwe.mitre.org/data/definitions/384.html'
+      customFields: []
+  category: Gestion des identités
+- cvssv3: 'CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N'
+  details:
+    - locale: fr
+      title: Faiblesses de la politique de mot de passe
+      vulnType: OWASP WSTG
+      description: >-
+        <p>Toutes les fonctionnalités de sécurité intégrées à l'infrastructure
+        technologique peuvent être exposées par une politique de mot de passe
+        laxiste.
+      observation: "<ul><li><p>Contrôle d'accès\_: obtenez des privilèges ou assumez votre identité\_: à mesure que les mots de passe vieillissent, la probabilité qu'ils soient compromis augmente.</p></li><li><p>Contrôle d'accès\_: obtenez des privilèges ou"
+      remediation: "<p>Établir une politique de mot de passe stricte qui oblige l'utilisateur à\_:</p><ul><li><p>Un mot de passe d'une longueur minimale de 8\_caractères. Utiliser tous les types de caractères, y compris les lettres majuscules et minuscules, les chiffres et les caractères spéciaux."
+      references:
+        - >-
+          https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/04-Authentication_Testing/02-Testing_for_Default_Credentials
+        - >-
+          https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/04-Authentication_Testing/07-Testing_for_Weak_Password_Policy
+        - 'https://cwe.mitre.org/data/definitions/521.html'
+      customFields: []
+  category: Authentification
+- cvssv3: 'CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:N'
+  details:
+    - locale: fr
+      title: Aucune politique de rotation des mots de passe
+      vulnType: OWASP WSTG
+      description: >-
+        <p>Certaines politiques exigent que les utilisateurs changent leurs mots
+        de passe périodiquement, souvent tous les 90 ou 180
+        jours.</p><p>L'avantage de l'expiration des mots de passe est cependant
+        discutable.
+      observation: "<ul><li><p>Contrôle d'accès\_: obtenez des privilèges ou assumez votre identité\_: à mesure que les mots de passe vieillissent, la probabilité qu'ils soient compromis augmente.</p></li></ul>"
+      remediation: >-
+        <p>Ce n'est que lorsque la force du mot de passe imposé par
+        l'application n'est plus suffisamment forte pour résister aux attaques
+        par force brute en raison d'une augmentation de la puissance de calcul
+        que les utilisateurs peuvent être amenés à mettre à jour leurs mots de
+        passe.</p>
+      references:
+        - 'https://cwe.mitre.org/data/definitions/263.html'
+      customFields: []
+  category: Authentification
+- cvssv3: 'CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:N'
+  details:
+    - locale: fr
+      title: Autoriser le changement de mot de passe
+      vulnType: OWASP WSTG
+      description: >-
+        <p>Les utilisateurs doivent avoir la possibilité de modifier leur mot de
+        passe chaque fois que nécessaire.
+      observation: "<ul><li><p>Contrôle d'accès\_: contourner le mécanisme de protection\_: les vérifications de contrôle d'accès pour des données ou fonctionnalités utilisateur spécifiques peuvent être contournées.</p></li><li><p>Contrôle d'accès\_: obtenir des privilèges ou assumer"
+      remediation: >-
+        <p>Les applications doivent offrir une fonctionnalité permettant à
+        l'utilisateur de modifier son propre mot de passe.</p>
+      references:
+        - 'https://cwe.mitre.org/data/definitions/620.html'
+      customFields: []
+  category: Authentification
+- cvssv3: 'CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N'
+  details:
+    - locale: fr
+      title: Vérifier les mots de passe violés
+      vulnType: OWASP WSTG
+      description: >-
+        <p>Au fil des années, des violations ont entraîné la publication de
+        nombreuses bases de données contenant des informations d'identification
+        volées.
+      observation: "<ul><li><p>Contrôle d'accès\_: obtenez des privilèges ou assumez votre identité\_: un attaquant pourrait facilement deviner les mots de passe des utilisateurs et accéder aux comptes d'utilisateurs.</p></li></ul>"
+      remediation: >-
+        <p>Vérifiez que les mots de passe saisis lors de la création du compte,
+        de la connexion et des modifications de mot de passe sont comparés à une
+        liste de mots de passe qui ont été compromis.
+      references:
+        - 'https://cwe.mitre.org/data/definitions/521.html'
+      customFields: []
+  category: Authentification
+- cvssv3: 'CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N'
+  details:
+    - locale: fr
+      title: Les secrets doivent être sécurisés et générés de manière aléatoire
+      vulnType: OWASP WSTG
+      description: >-
+        <p>Les mots de passe, les jetons API et les clés secrètes doivent être
+        générés dynamiquement.
+      observation: "<ul><li><p>Autre\_: Autre\_: lorsqu'un mécanisme de protection s'appuie sur des valeurs aléatoires pour restreindre l'accès à une ressource sensible, telle qu'un ID de session ou une graine pour générer une clé cryptographique, alors la ressource protégée peut être"
+      remediation: >-
+        <p>Ces valeurs doivent être générées dynamiquement et valides une seule
+        fois lorsqu'il s'agit de jetons API et de clés secrètes. Le jeton secret
+        doit être cryptographiquement « sécurisé de manière aléatoire », avoir
+        au moins 120 bits d'entropie effective, être salé avec un code spécial
+        et aléatoire.
+      references:
+        - 'https://cwe.mitre.org/data/definitions/330.html'
+      customFields: []
+  category: Authentification
+- cvssv3: 'CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N'
+  details:
+    - locale: fr
+      title: Faiblesses dans la protection contre les attaques par force brute
+      vulnType: OWASP WSTG
+      description: >-
+        <p>Une menace courante à laquelle sont confrontés les développeurs Web
+        est une attaque par devinette de mot de passe, connue sous le nom
+        d'attaque par force brute.
+      observation: "<ul><li><p>Contrôle d'accès\_: contourner le mécanisme de protection\_: lorsque l'autorisation, l'authentification ou un autre mécanisme de protection s'appuie sur des entités CAPTCHA pour garantir que seuls les acteurs humains peuvent accéder à certaines fonctionnalités, un attaquant automatisé tel qu'un robot peut y accéder."
+      remediation: <p>Créez un système de défense suffisant pour arrêter les attaques.
+      references:
+        - >-
+          https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/04-Authentication_Testing/03-Testing_for_Weak_Lock_Out_Mechanism
+        - 'https://cwe.mitre.org/data/definitions/804.html'
+        - 'https://cwe.mitre.org/data/definitions/645.html'
+        - 'https://cwe.mitre.org/data/definitions/1216.html'
+        - 'https://cwe.mitre.org/data/definitions/307.html'
+      customFields: []
+  category: Authentification
+- cvssv3: 'CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N'
+  details:
+    - locale: fr
+      title: Faiblesse du mécanisme d’authentification à deuxième facteur (2FA).
+      vulnType: OWASP WSTG
+      description: >-
+        <p>Le mécanisme d'authentification à deux facteurs (2FA) d'un modèle de
+        sécurité Zero Trust est un élément clé.
+      observation: "<ul><li><p>Contrôle d'accès\_: contourner le mécanisme de protection\_: l'application n'utilise pas ou utilise incorrectement un mécanisme de protection offrant une défense suffisante contre les attaques dirigées contre le produit.</p></li></ul>"
+      remediation: >-
+        <p>Bien qu'il soit préférable d'omettre les SMS comme option 2FA
+        uniquement, cela ne répond pas à la raison de l'ajout de 2FA en premier
+        lieu.
+      references:
+        - >-
+          https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/04-Authentication_Testing/03-Testing_for_Weak_Lock_Out_Mechanism
+        - 'https://cwe.mitre.org/data/definitions/693.html'
+      customFields: []
+  category: Authentification
+- cvssv3: 'CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N'
+  details:
+    - locale: fr
+      title: Noms d'utilisateur et mots de passe par défaut
+      vulnType: OWASP WSTG
+      description: >-
+        <p>Le compte administratif intégré possède des mots de passe par défaut
+        sur de nombreux matériels et applications Web.
+      observation: "<ul><li><p>Contrôle d'accès\_: obtenez des privilèges ou assumez votre identité\_: un attaquant pourrait facilement deviner les mots de passe des utilisateurs et accéder aux comptes d'utilisateurs.</p></li></ul>"
+      remediation: >-
+        <p>La conception d'un produit doit exiger le respect d'une politique de
+        mot de passe appropriée.
+      references:
+        - >-
+          https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/01-Test_Network_Infrastructure_Configuration
+        - >-
+          https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/04-Authentication_Testing/02-Testing_for_Default_Credentials
+        - 'https://cwe.mitre.org/data/definitions/521.html'
+      customFields: []
+  category: Authentification
+- cvssv3: 'CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N'
+  details:
+    - locale: fr
+      title: Contournement de la fonctionnalité de connexion
+      vulnType: OWASP WSTG
+      description: >-
+        <p>En sécurité informatique, l'authentification est le processus
+        consistant à tenter de vérifier l'identité numérique de l'expéditeur
+        d'une communication.
+      observation: "<ul><li><p>Contrôle d'accès\_: contourner le mécanisme de protection\_: l'attaquant peut utiliser un autre chemin ou canal qui ne nécessite pas d'authentification.</p></li></ul>"
+      remediation: >-
+        <p>Seuls les utilisateurs authentifiés peuvent consulter les pages
+        privées de l'application.</p><p>Expliquez en détail les modifications
+        requises pour résoudre la vulnérabilité en cas de contournement de la
+        fonctionnalité d'authentification.</p>
+      references:
+        - >-
+          https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/04-Authentication_Testing/04-Testing_for_Bypassing_Authentication_Schema
+        - 'https://cwe.mitre.org/data/definitions/288.html'
+      customFields: []
+  category: Authentification
+- cvssv3: 'CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N'
+  details:
+    - locale: fr
+      title: Informations sensibles stockées dans le navigateur
+      vulnType: OWASP WSTG
+      description: >-
+        <p>L'application Web ne dispose pas d'une politique de mise en cache
+        appropriée qui établit le niveau de mise en cache qui doit être effectué
+        pour chaque page Web et les champs de formulaire associés.</p><p>Les
+        informations peuvent être stockées par les navigateurs à des fins
+        d'historique et de mise en cache.
+      observation: "<ul><li><p>Confidentialité\_: lire les données de l'application\_: l'attaquant peut être en mesure de lire des informations sensibles</p></li></ul>"
+      remediation: >-
+        <p>Utilisez une stratégie de mise en cache restrictive pour les
+        formulaires et les pages Web susceptibles de contenir des informations
+        sensibles.
+      references:
+        - >-
+          https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/04-Authentication_Testing/06-Testing_for_Browser_Cache_Weaknesses
+        - 'https://cwe.mitre.org/data/definitions/525.html'
+      customFields: []
+  category: Authentification
+- cvssv3: 'CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N'
+  details:
+    - locale: fr
+      title: >-
+        Faiblesses dans la fonctionnalité de changement/réinitialisation de mot
+        de passe
+      vulnType: OWASP WSTG
+      description: >-
+        <p>Un mécanisme permettant à un utilisateur d'accéder à son compte en
+        cas d'oubli de son mot de passe est généralement présent dans les
+        applications.
+      observation: "<ul><li><p>Contrôle d'accès\_: obtenir des privilèges ou assumer une identité\_: un attaquant pourrait obtenir un accès non autorisé au système en récupérant les informations d'authentification d'un utilisateur légitime</p></li><li><p>Disponibilité\_:\_DoS"
+      remediation: >-
+        <p>Assurez-vous que le mécanisme de récupération de mot de passe a
+        soigneusement filtré et validé chaque élément d'information fourni par
+        l'utilisateur.</p><ul><li><p>Utilisez plusieurs questions de sécurité
+        plutôt que les questions de sécurité faibles habituelles.</p>
+      references:
+        - >-
+          https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/04-Authentication_Testing/09-Testing_for_Weak_Password_Change_or_Reset_Functionalities
+        - 'https://cwe.mitre.org/data/definitions/640.html'
+      customFields: []
+  category: Authentification
+- cvssv3: 'CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N'
+  details:
+    - locale: fr
+      title: Informations d'identification envoyées en texte clair par e-mail
+      vulnType: OWASP WSTG
+      description: >-
+        <p>Cette faille implique qu'une fois que l'utilisateur a vérifié son
+        identité, la fonctionnalité d'enregistrement ou de récupération de mot
+        de passe lui envoie le mot de passe par e-mail.
+      observation: "<ul><li><p>Confidentialité\_: lecture des données de l'application\_: un attaquant peut être en mesure de déchiffrer les données à l'aide d'attaques par force brute.</p></li></ul>"
+      remediation: "<p>Lors de l'envoi de mots de passe par e-mail, les domaines suivants doivent être vérifiés\_:</p><ul><li><p>L'utilisateur est-il obligé de changer le mot de passe lors de la première connexion\_?"
+      references:
+        - >-
+          https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/04-Authentication_Testing/09-Testing_for_Weak_Password_Change_or_Reset_Functionalities
+        - 'https://cwe.mitre.org/data/definitions/319.html'
+        - 'https://cwe.mitre.org/data/definitions/311.html'
+      customFields: []
+  category: Authentification
+- cvssv3: 'CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N'
+  details:
+    - locale: fr
+      title: Authentification incorrecte
+      vulnType: OWASP WSTG
+      description: >-
+        <p>La candidature ne prouve pas ou ne prouve pas suffisamment que la
+        prétention d'un acteur de posséder une identité particulière est
+        vraie.</p>
+      observation: "<ul><li><p>Contrôle d'accès\_: exécuter du code ou des commandes non autorisés\_: cette faiblesse peut conduire à l'exposition de ressources ou de fonctionnalités à des acteurs involontaires, fournissant éventuellement aux attaquants des informations sensibles ou même exécutant du code arbitraire.</p><"
+      remediation: >-
+        <p>Utilisez un framework ou une bibliothèque pour l'authentification,
+        telle que la fonctionnalité d'authentification OWASP ESAPI.</p>
+      references:
+        - 'https://cwe.mitre.org/data/definitions/287.html'
+      customFields: []
+  category: Authentification
+- cvssv3: 'CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L'
+  details:
+    - locale: fr
+      title: Tous les contrôles d'authentification doivent échouer en toute sécurité
+      vulnType: OWASP WSTG
+      description: >-
+        <p>La gestion sécurisée des erreurs est un élément crucial du codage
+        sécurisé. Deux erreurs en particulier nécessitent une attention
+        particulière.
+      observation: "<ul><li><p>Confidentialité\_: lecture de fichiers ou de répertoires\_: un attaquant pourrait lire des données sensibles, soit en lisant les données directement à partir d'un magasin de données qui n'est pas correctement restreint, soit en accédant à une fonctionnalité privilégiée et insuffisamment protégée pour lire."
+      remediation: >-
+        <p>Avant d'utiliser un système de contrôle d'accès dans votre
+        application, assurez-vous qu'il a tous subi des tests de sécurité
+        approfondis.
+      references:
+        - 'https://cwe.mitre.org/data/definitions/285.html'
+      customFields: []
+  category: Authentification
+- cvssv3: 'CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:L/A:N'
+  details:
+    - locale: fr
+      title: >-
+        Les modules cryptographiques doivent échouer en toute sécurité - Padding
+        Oracle Attack
+      vulnType: OWASP WSTG
+      description: >-
+        <p>Lorsqu'un module cryptographique tombe en panne de manière non
+        sécurisée, l'appareil doit être mis en état d'erreur afin qu'il ne soit
+        plus fonctionnel.</p>
+      observation: "<ul><li><p>Confidentialité\_: lire les données de l'application\_: l'attaquant peut être en mesure de lire des informations sensibles</p></li></ul>"
+      remediation: >-
+        <p>Nous vous conseillons de soumettre le module cryptographique à ses
+        propres tests en utilisant la norme du National Institute of Standards
+        and Technology (NIST) pour voir s'il échoue en toute sécurité.</p>
+      references:
+        - 'https://cwe.mitre.org/data/definitions/310.html'
+      customFields: []
+  category: Authentification
+- cvssv3: 'CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:N'
+  details:
+    - locale: fr
+      title: Traversée du chemin
+      vulnType: OWASP WSTG
+      description: "<p>La vulnérabilité «\_Path Traversal\_» permet aux utilisateurs d'accéder à des fichiers ou des répertoires situés ailleurs sur le système en échappant à la zone restreinte."
+      observation: "<ul><li><p>Intégrité\_: exécuter du code ou des commandes non autorisés\_: l'attaquant peut être en mesure de créer ou d'écraser des fichiers critiques utilisés pour exécuter du code, tels que des programmes ou des bibliothèques.</p></li><"
+      remediation: >-
+        <p>Utilisez une stratégie de validation des entrées de données ou une
+        liste d'entrées strictement conformes aux exigences, et rejetez toute
+        entrée qui ne répond pas à ces exigences.</p>
+      references:
+        - >-
+          https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/05-Authorization_Testing/01-Testing_Directory_Traversal_File_Include
+        - 'https://cwe.mitre.org/data/definitions/22.html'
+      customFields: []
+  category: Autorisation
+- cvssv3: 'CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:N'
+  details:
+    - locale: fr
+      title: IDOR (références d'objet directes non sécurisées)
+      vulnType: OWASP WSTG
+      description: >-
+        <p>Lorsqu'une application accorde un accès direct aux objets en fonction
+        de la saisie de l'utilisateur, cela est appelé « référence d'objet
+        directe non sécurisée » (IDOR).
+      observation: "<ul><li><p>Contrôle d'accès\_: contourner le mécanisme de protection\_: un attaquant pourrait effectuer un nombre arbitraire de tentatives d'authentification en utilisant différents mots de passe, et éventuellement accéder au compte ciblé.</p></li><li>"
+      remediation: >-
+        <p>Évitez d'afficher des références à des éléments secrets tels que des
+        noms de fichiers ou des clés.</p><p>Le côté serveur doit correctement
+        implémenter la validation des paramètres et la vérification des objets
+        pour toutes les références.</p><p>Les jetons doivent être créés dans un
+      references:
+        - >-
+          https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/05-Authorization_Testing/04-Testing_for_Insecure_Direct_Object_References
+        - 'https://cwe.mitre.org/data/definitions/706.html'
+        - 'https://cwe.mitre.org/data/definitions/813.html'
+      customFields: []
+  category: Autorisation
+- cvssv3: 'CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:N'
+  details:
+    - locale: fr
+      title: Principe du moindre privilège
+      vulnType: OWASP WSTG
+      description: >-
+        <p>Selon le principe du moindre privilège, les comptes doivent disposer
+        du moins de privilèges nécessaires pour mener à bien leurs opérations
+        commerciales.
+      observation: "<ul><li><p>Autre\_: Autre\_: l'exposition d'une fonctionnalité critique fournit essentiellement à un attaquant le niveau de privilège de cette fonctionnalité."
+      remediation: >-
+        <ul><li><p>Le principe consiste à accorder à un compte utilisateur
+        uniquement les privilèges essentiels au travail de cet utilisateur.
+      references:
+        - 'https://cwe.mitre.org/data/definitions/306.html'
+      customFields: []
+  category: Autorisation
+- cvssv3: 'CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N'
+  details:
+    - locale: fr
+      title: Autorisation inappropriée
+      vulnType: OWASP WSTG
+      description: >-
+        <p>Lorsqu'un acteur tente d'accéder à une ressource ou d'effectuer une
+        action, le logiciel n'effectue pas ou effectue de manière incorrecte une
+        vérification d'autorisation. En fonction des privilèges de l'utilisateur
+        et des autorisations ou autres exigences de contrôle d'accès qui
+        s'appliquent à la ressource.
+      observation: "<ul><li><p>Confidentialité\_: lecture de fichiers ou de répertoires\_: un attaquant pourrait lire des données sensibles, soit en lisant les données directement à partir d'un magasin de données qui n'est pas correctement restreint, soit en accédant à une fonctionnalité privilégiée et insuffisamment protégée pour lire."
+      remediation: >-
+        <p>Architecture et conception</p><ul><li><p>Divisez le logiciel en zones
+        anonymes, normales, privilégiées et administratives.
+      references:
+        - 'https://cwe.mitre.org/data/definitions/285.html'
+      customFields: []
+  category: Autorisation
+- cvssv3: 'CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N'
+  details:
+    - locale: fr
+      title: ID de session prévisible
+      vulnType: OWASP WSTG
+      description: >-
+        <p>L'objectif principal de l'attaque par prédiction de session est de
+        prévoir les valeurs d'ID de session qui permettent à un attaquant de
+        contourner le processus d'authentification d'une application.
+      observation: "<ul><li><p>Contrôle d'accès\_: contourner le mécanisme de protection\_: un attaquant pourrait rester connecté pendant une longue période, ce qui pourrait réutiliser des identifiants et des références directes anciens ou supprimés.</p></li></ul>"
+      remediation: >-
+        <p>En utilisant des hachages et des variables non répétables comme les
+        horodatages, une session non prévisible doit être générée.</p>
+      references:
+        - >-
+          https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/06-Session_Management_Testing/01-Testing_for_Session_Management_Schema
+        - 'https://cwe.mitre.org/data/definitions/1018.html'
+        - 'https://owasp.org/www-community/attacks/Session_Prediction'
+      customFields: []
+  category: Gestion des sessions
+- cvssv3: 'CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N'
+  details:
+    - locale: fr
+      title: Attribut sécurisé manquant dans les cookies
+      vulnType: OWASP WSTG
+      description: >-
+        <p>Les attributs Secure et HttpOnly sont utilisés pour garantir que les
+        cookies sont envoyés en toute sécurité et que les scripts ou les parties
+        involontaires ne peuvent pas y accéder.
+      observation: "<ul><li><p>Confidentialité\_: lire les données de l'application\_: un attaquant qui réussit un script intersite ou une attaque de type man-in-the-middle pourra lire le contenu du cookie et exfiltrer les informations obtenues.<"
+      remediation: >-
+        <p>Les attributs HttpOnly et Secure doivent être utilisés par le serveur
+        lors de la configuration des cookies afin d'atténuer cette
+        vulnérabilité.
+      references:
+        - >-
+          https://cwe.mitre.org/data/definitions/614.html
+          https://cwe.mitre.org/data/definitions/1004.html
+        - 'https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies'
+        - >-
+          https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html
+      customFields: []
+  category: Gestion des sessions
+- cvssv3: 'CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N'
+  details:
+    - locale: fr
+      title: Attribut HTTP Only manquant dans les cookies
+      vulnType: OWASP WSTG
+      description: >-
+        <p>Les attributs Secure et HttpOnly sont utilisés pour garantir que les
+        cookies sont envoyés en toute sécurité et que des personnes ou des
+        scripts non autorisés ne peuvent y accéder.</p>
+      observation: >-
+        <ul><li><p>Confidentialité&nbsp;: lecture des données
+        d'application&nbsp;: si l'indicateur HttpOnly n'est pas défini, les
+        informations sensibles stockées dans le cookie peuvent être exposées à
+        des parties involontaires.</p></li><li><p></p></li></ul>
+      remediation: >-
+        <p>Les attributs HttpOnly et Secure doivent être utilisés par le serveur
+        lors de la configuration des cookies afin d'atténuer cette
+        vulnérabilité.</p>
+      references:
+        - >-
+          https://cwe.mitre.org/data/definitions/614.html
+          https://cwe.mitre.org/data/definitions/1004.html
+        - 'https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies'
+        - >-
+          https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html
+      customFields: []
+  category: Gestion des sessions
+- cvssv3: 'CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N'
+  details:
+    - locale: fr
+      title: Attribut SameSite manquant dans les cookies
+      vulnType: OWASP WSTG
+      description: >-
+        <p>Il a été découvert que les cookies créés par l'application
+        n'utilisent pas le mécanisme de protection de SameSite au moment de
+        l'accès au site Web.
+      observation: "<ul><li><p>Confidentialité\_: modifier les données de l'application\_: si le site Web n'impose pas de défense supplémentaire contre les attaques CSRF, le fait de ne pas utiliser les valeurs «\_Lax\_» ou «\_Strict\_» pourrait augmenter le risque d'exposition aux attaques CSRF."
+      remediation: "<p>Dans la mesure du possible, il est conseillé de créer des cookies avec l'attribut 'SameSite' défini sur la valeur 'Strict'.</p><p>Set-Cookie\_: <Cookie>=<Value>;"
+      references:
+        - >-
+          https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes
+        - 'https://cwe.mitre.org/data/definitions/1275.html'
+        - >-
+          https://cheatsheetseries.owasp.org/cheatsheets/Cross-Site_Request_Forgery_Prevention_Cheat_Sheet.html
+        - 'https://cwe.mitre.org/data/definitions/1275.html'
+      customFields: []
+  category: Gestion des sessions
+- cvssv3: 'CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N'
+  details:
+    - locale: fr
+      title: >-
+        Les cookies d'application ont un délai d'expiration excessif ou
+        indéfini.
+      vulnType: OWASP WSTG
+      description: "<p>L'attribut Expires est utilisé pour\_:</p><ul><li><p>Définir des cookies persistants.</p></li><li><p>Limiter la durée de vie si une session dure trop longtemps"
+      observation: "<ul><li><p>Contrôle d'accès\_: contourner le mécanisme de protection\_: un attaquant pourrait rester connecté pendant une longue période, ce qui pourrait réutiliser des identifiants et des références directes anciens ou supprimés.</p></li></ul>"
+      remediation: >-
+        <p>Seuls les cookies persistants sont définis à l'aide de l'attribut
+        lui-même.
+      references:
+        - >-
+          https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes
+        - 'https://cwe.mitre.org/data/definitions/613.html'
+      customFields: []
+  category: Gestion des sessions
+- cvssv3: 'CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N'
+  details:
+    - locale: fr
+      title: Expiration de session insuffisante
+      vulnType: OWASP WSTG
+      description: >-
+        <p>Les cookies de session uniques des utilisateurs authentifiés, qui
+        sont généralement utilisés par les applications Web, doivent être
+        configurés avec une durée de vie afin qu'ils expirent après une durée
+        maximale définie.
+      observation: "<ul><li><p>Contrôle d'accès\_: contourner le mécanisme de protection\_: un attaquant pourrait rester connecté pendant une longue période, ce qui pourrait réutiliser des identifiants et des références directes anciens ou supprimés.</p></li></ul>"
+      remediation: <p>Réduisez les délais d'expiration des sessions.</p>
+      references:
+        - 'https://owasp.org/www-community/Session_Timeout'
+      customFields: []
+  category: Gestion des sessions
+- cvssv3: 'CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N'
+  details:
+    - locale: fr
+      title: Fixation de session
+      vulnType: OWASP WSTG
+      description: "<p>L'authentification d'un utilisateur ou l'établissement d'une nouvelle session utilisateur, sans invalider les identifiants de session existants, donne à un attaquant la possibilité de voler des sessions authentifiées.</p><p>Ce scénario est généralement observé lorsque\_:</p><"
+      observation: "<ul><li><p>Contrôle d'accès\_: contourner le mécanisme de protection\_: un attaquant pourrait rester connecté pendant une longue période, ce qui pourrait réutiliser des identifiants et des références directes anciens ou supprimés.</p></li></ul>"
+      remediation: >-
+        <p>La contre-mesure à une vulnérabilité de fixation de session consiste
+        à coder en dur l'application de manière à empêcher l'application
+        d'accepter un jeton qui a été forcé dans la session de la
+        victime.</p><p>Les étapes suivantes fournissent un
+      references:
+        - >-
+          https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/06-Session_Management_Testing/03-Testing_for_Session_Fixation
+        - 'https://cwe.mitre.org/data/definitions/384.html'
+      customFields: []
+  category: Gestion des sessions
+- cvssv3: 'CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:N'
+  details:
+    - locale: fr
+      title: Contrefaçon de demande intersite (CSRF)
+      vulnType: OWASP WSTG
+      description: >-
+        <p>Une attaque CSRF vise à inciter un utilisateur à exécuter
+        involontairement une fonctionnalité dans une application Web vulnérable
+        qui profitera à l'attaquant et au détriment de l'utilisateur
+        concerné.</p><p>Plus précisément, l'attaque est menée.
+      observation: "<ul><li><p>Contrôle d'accès\_: DoS\_: crash, sortie ou redémarrage\_: les conséquences varient en fonction de la nature de la fonctionnalité vulnérable au CSRF."
+      remediation: >-
+        <p>Pour éviter les attaques Cross-Site Request Forgery, il est
+        nécessaire que chaque requête adressée au site Web contienne un
+        identifiant unique (un jeton de synchronisation), qui doit être un
+        paramètre que l'attaquant ne peut pas connaître.</p><p
+      references:
+        - >-
+          https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/06-Session_Management_Testing/05-Testing_for_Cross_Site_Request_Forgery
+        - 'https://cwe.mitre.org/data/definitions/352.html'
+      customFields: []
+  category: Gestion des sessions
+- cvssv3: 'CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:N'
+  details:
+    - locale: fr
+      title: Absence de token anti-CSRF
+      vulnType: OWASP WSTG
+      description: >-
+        <p>Une attaque CSRF vise à inciter un utilisateur à exécuter
+        involontairement une fonctionnalité dans une application Web vulnérable
+        qui profitera à l'attaquant et au détriment de l'utilisateur
+        concerné.</p><p>Plus précisément, l'attaque est menée.
+      observation: "<ul><li><p>Contrôle d'accès\_: DoS\_: crash, sortie ou redémarrage\_: les conséquences varient en fonction de la nature de la fonctionnalité vulnérable au CSRF."
+      remediation: >-
+        <p>L'application doit être mise à jour pour inclure la prise en charge
+        des jetons anti-CSRF pour tous les formulaires sensibles accessibles
+        lors d'une session authentifiée.</p>
+      references:
+        - >-
+          https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/06-Session_Management_Testing/05-Testing_for_Cross_Site_Request_Forgery
+        - 'https://cwe.mitre.org/data/definitions/352.html'
+      customFields: []
+  category: Gestion des sessions
+- cvssv3: 'CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:L/A:N'
+  details:
+    - locale: fr
+      title: Faiblesses dans le processus de déconnexion.
+      vulnType: OWASP WSTG
+      description: >-
+        <p>Le mécanisme de déconnexion des utilisateurs de l'application n'est
+        pas correctement implémenté.</p><p>Un utilisateur peut à nouveau
+        interagir avec l'application sans avoir à saisir à nouveau ses
+        informations de connexion car la session n'est pas correctement
+        invalidée.</p>
+      observation: "<ul><li><p>Contrôle d'accès\_: exécuter du code ou des commandes non autorisés\_: cette faiblesse peut conduire à l'exposition de ressources ou de fonctionnalités à des acteurs involontaires, fournissant éventuellement aux attaquants des informations sensibles ou même exécutant du code arbitraire.</p><"
+      remediation: >-
+        <p>Il est conseillé que le bouton de déconnexion soit présent sur toutes
+        les pages de l'application, qu'il invalide la session à la fois sur le
+        client et sur le serveur, et que le serveur rejette toute autre
+        connexion établie avec le même token.</p>
+      references:
+        - >-
+          https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/06-Session_Management_Testing/06-Testing_for_Logout_Functionality
+        - 'https://cwe.mitre.org/data/definitions/287.html'
+      customFields: []
+  category: Gestion des sessions
+- cvssv3: 'CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:L/A:N'
+  details:
+    - locale: fr
+      title: Faiblesses dans le processus de déconnexion dues à l'inactivité.
+      vulnType: OWASP WSTG
+      description: >-
+        <p>Toutes les applications doivent implémenter un délai d'inactivité
+        pour les sessions.
+      observation: "<ul><li><p>Contrôle d'accès\_: contourner le mécanisme de protection\_: un attaquant pourrait rester connecté pendant une longue période, ce qui pourrait réutiliser des identifiants et des références directes anciens ou supprimés.</p></li></ul>"
+      remediation: >-
+        <p>Le côté serveur doit implémenter la gestion des délais d'expiration
+        et de l'expiration des sessions.
+      references:
+        - >-
+          https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/06-Session_Management_Testing/07-Testing_Session_Timeout
+        - 'https://cwe.mitre.org/data/definitions/1018.html'
+      customFields: []
+  category: Gestion des sessions
+- cvssv3: 'CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:L/A:N'
+  details:
+    - locale: fr
+      title: Détournement de session
+      vulnType: OWASP WSTG
+      description: >-
+        <p>L'attaque de détournement de session consiste à exploiter le
+        mécanisme de contrôle de session Web, qui est normalement géré pour un
+        jeton de session.</p><p>La communication http utilisant de nombreuses
+        connexions TCP différentes, le serveur Web a besoin d'une méthode pour
+        reconnaître chacune d'elles.
+      observation: "<ul><li><p>Contrôle d'accès\_: contourner le mécanisme de protection\_: un attaquant pourrait rester connecté pendant une longue période, ce qui pourrait réutiliser des identifiants et des références directes anciens ou supprimés.</p></li></ul>"
+      remediation: >-
+        <p>Utilisez des processus de génération de clés de session standard du
+        secteur qui génèrent des clés de session en utilisant beaucoup
+        d'entropie, et chiffrez et signez correctement les jetons d'identité en
+        transit.
+      references:
+        - >-
+          https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/06-Session_Management_Testing/09-Testing_for_Session_Hijacking
+        - 'https://capec.mitre.org/data/definitions/593.html'
+      customFields: []
+  category: Gestion des sessions
+- cvssv3: 'CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:L/A:N'
+  details:
+    - locale: fr
+      title: Connexions simultanées mal contrôlées.
+      vulnType: OWASP WSTG
+      description: >-
+        <p>Les applications nécessitant une authentification ne doivent
+        autoriser qu'une seule session active par utilisateur et ne doivent pas
+        autoriser plusieurs sessions utilisateur authentifiées sur différents
+        navigateurs ou ordinateurs.</p>
+      observation: "<ul><li><p>Contrôle d'accès\_: contourner le mécanisme de protection\_: un attaquant pourrait rester connecté pendant une longue période, ce qui pourrait réutiliser des identifiants et des références directes anciens ou supprimés.</p></li></ul>"
+      remediation: >-
+        <p>Il est conseillé que les sessions d'un même utilisateur ne
+        s'exécutent pas simultanément et qu'ils reçoivent toujours une
+        notification lorsqu'une ancienne session est toujours active.</p>
+      references:
+        - 'https://owasp.org/www-community/attacks/Session_hijacking_attack'
+      customFields: []
+  category: Gestion des sessions
+- cvssv3: 'CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:N'
+  details:
+    - locale: fr
+      title: (générique) Échec de la désinfection de l'entrée
+      vulnType: OWASP WSTG
+      description: >-
+        <p>L'utilisation incorrecte d'éléments spéciaux dans les entrées
+        contrôlées par l'utilisateur n'est pas correctement filtrée, supprimée,
+        citée ou autrement gérée par le produit, ce qui pourrait avoir un impact
+        négatif sur son comportement et son intégrité.</p>
+      observation: "<ul><li><p>Disponibilité\_:\_DoS\_: crash, sortie ou redémarrage\_: les contrôles de validation côté client peuvent être facilement contournés, permettant ainsi à des entrées mal formées ou inattendues de passer dans l'application, potentiellement en tant que données fiables."
+      remediation: >-
+        <p>Les développeurs doivent s'attendre à ce que des éléments spéciaux
+        soient injectés/supprimés/manipulés dans les vecteurs d'entrée de leur
+        système logiciel.
+      references:
+        - 'https://cwe.mitre.org/data/definitions/159.html'
+      customFields: []
+  category: Validation des entrées
+- cvssv3: 'CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:N'
+  details:
+    - locale: fr
+      title: (générique) Cross-Site Scripting (XSS)
+      vulnType: OWASP WSTG
+      description: >-
+        <p>La vulnérabilité « Cross-Site Scripting (XSS) » permet à des tiers
+        d'injecter du code Java Script ou HTML dans des pages Web d'applications
+        spécifiques.
+      observation: "<ul><li><p>Confidentialité\_: lecture des données d'application\_: l'attaque la plus courante effectuée avec des scripts intersites implique la divulgation d'informations stockées dans les cookies des utilisateurs."
+      remediation: >-
+        <p>Chaque paramètre géré par l'application doit être validé, notamment
+        lorsqu'il s'agit de données d'entrée fournies par l'utilisateur.
+      references:
+        - >-
+          https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/07-Input_Validation_Testing/01-Testing_for_Reflected_Cross_Site_Scripting
+        - 'https://owasp.org/www-community/attacks/xss/'
+        - 'https://cwe.mitre.org/data/definitions/79.html'
+      customFields: []
+  category: Validation des entrées
+- cvssv3: 'CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:N'
+  details:
+    - locale: fr
+      title: Scripts intersites réfléchis (XSS réfléchi)
+      vulnType: OWASP WSTG
+      description: >-
+        <p>Grâce à une attaque XSS (Cross-Site Scripting), un attaquant peut
+        insérer du code malveillant qui s'exécute dans le navigateur de la
+        victime, prendre le contrôle du navigateur et l'utiliser pour accéder
+        aux informations d'identification, aux données sensibles ou aux données
+        de session de l'application concernée.
+      observation: "<ul><li><p>Confidentialité\_: lecture des données d'application\_: l'attaque la plus courante effectuée avec des scripts intersites implique la divulgation d'informations stockées dans les cookies des utilisateurs."
+      remediation: >-
+        <p>La prévention des attaques Cross-site Scripting (XSS) n'est pas
+        triviale selon la complexité de l'application et la façon dont elle gère
+        les données contrôlables par l'utilisateur et le type de vulnérabilité
+        Cross-site Scripting (XSS).</p><p>
+      references:
+        - >-
+          https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/07-Input_Validation_Testing/01-Testing_for_Reflected_Cross_Site_Scripting
+        - 'https://owasp.org/www-community/attacks/xss/'
+        - 'https://cwe.mitre.org/data/definitions/79.html'
+      customFields: []
+  category: Validation des entrées
+- cvssv3: 'CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:L'
+  details:
+    - locale: fr
+      title: Scripts intersites stockés (XSS stocké)
+      vulnType: OWASP WSTG
+      description: >-
+        <p>Les attaques Cross-Site Scripting (XSS) sont un type d'injection dans
+        lequel des scripts malveillants sont injectés dans des sites Web par
+        ailleurs inoffensifs et fiables.
+      observation: "<ul><li><p>Confidentialité\_: lecture des données d'application\_: l'attaque la plus courante effectuée avec des scripts intersites implique la divulgation d'informations stockées dans les cookies des utilisateurs."
+      remediation: >-
+        <p>Il est nécessaire de nettoyer toutes les entrées côté serveur pour
+        réduire le risque de stockage de XSS.
+      references:
+        - >-
+          https://owasp.org/www-community/attacks/Server_Side_Request_Forgery
+          https://cheatsheetseries.owasp.org/cheatsheets/Server_Side_Request_Forgery_Prevention_Cheat_SS
+          fiche.html
+      customFields: []
+  category: Validation des entrées
+- cvssv3: 'CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:N'
+  details:
+    - locale: fr
+      title: Pollution des paramètres HTTP (HPP)
+      vulnType: OWASP WSTG
+      description: >-
+        <p>La pollution des paramètres HTTP profite du comportement incorrect de
+        l'application lors de la réponse à des requêtes HTTP qui ont le même
+        paramètre défini sur le serveur mais qui ont été envoyées avec des
+        valeurs différentes.
+      observation: "<ul><li><p>Intégrité\_: état inattendu\_: un attaquant pourrait manipuler les paramètres de l'application</p></li></ul>"
+      remediation: >-
+        <p>Ce type d'attaque serait évité en nettoyant correctement les données
+        d'entrée, en vérifiant le nombre d'instances de paramètres individuels
+        dans une requête et en recherchant les requêtes avec des affectations en
+        double.</p>
+      references:
+        - >-
+          https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/07-Input_Validation_Testing/04-Testing_for_HTTP_Parameter_Pollution
+        - 'https://cwe.mitre.org/data/definitions/235.html'
+        - 'https://capec.mitre.org/data/definitions/460.html'
+      customFields: []
+  category: Validation des entrées
+- cvssv3: 'CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:L'
+  details:
+    - locale: fr
+      title: (générique) Injection SQL
+      vulnType: OWASP WSTG
+      description: >-
+        <p>Grâce à l'utilisation de l'injection de code SQL (SQLi), il est
+        possible de modifier la logique des instructions SQL et de permettre
+        l'exécution de différents types de requêtes de base de données.
+      observation: "<ul><li><p>Confidentialité\_: lecture des données d'application\_: étant donné que les bases de données SQL contiennent généralement des données sensibles, la perte de confidentialité est un problème fréquent lié aux vulnérabilités d'injection SQL.</p></li><li><p>Accès"
+      remediation: >-
+        <p>Validez les paramètres gérés par l'application, en particulier
+        lorsque l'utilisateur les soumet en tant que données d'entrée.
+      references:
+        - 'https://www.owasp.org/index.php/SQL_Injection'
+      customFields: []
+  category: Validation des entrées
+- cvssv3: 'CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:L'
+  details:
+    - locale: fr
+      title: Injection SQL basée sur l'Union en bande
+      vulnType: OWASP WSTG
+      description: >-
+        <p>L'attaque par injection SQL (SQLi) tente d'obtenir des informations
+        ou même d'exécuter des commandes via cette vulnérabilité en
+        interagissant de manière inattendue avec la base de données.
+      observation: "<ul><li><p>Confidentialité\_: lecture des données d'application\_: étant donné que les bases de données SQL contiennent généralement des données sensibles, la perte de confidentialité est un problème fréquent lié aux vulnérabilités d'injection SQL.</p></li><li><p>Accès"
+      remediation: >-
+        <p>Il est conseillé de nettoyer les paramètres d'entrée de l'application
+        pour résoudre ce problème, car cela empêche les attaquants d'introduire
+        des caractères susceptibles de modifier la requête SQL et de permettre
+        la récupération d'informations.</p><p>La principale suggestion est de
+        mettre en place un "
+      references:
+        - >-
+          https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/07-Input_Validation_Testing/05-Testing_for_SQL_Injection
+        - 'https://owasp.org/www-community/attacks/Blind_SQL_Injection'
+        - 'https://cwe.mitre.org/data/definitions/89.html'
+      customFields: []
+  category: Validation des entrées
+- cvssv3: 'CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:L'
+  details:
+    - locale: fr
+      title: Injection SQL basée sur les erreurs en bande
+      vulnType: OWASP WSTG
+      description: >-
+        <p>Une interaction inattendue avec une base de données, connue sous le
+        nom d'attaque par injection SQL (SQLi), tente d'obtenir des informations
+        ou même d'exécuter des commandes à l'aide de cette faille.
+      observation: "<ul><li><p>Confidentialité\_: lecture des données d'application\_: étant donné que les bases de données SQL contiennent généralement des données sensibles, la perte de confidentialité est un problème fréquent lié aux vulnérabilités d'injection SQL.</p></li><li><p>Accès"
+      remediation: >-
+        <p>Il est conseillé de nettoyer les paramètres d'entrée de l'application
+        pour résoudre ce problème, car cela empêche les attaquants d'introduire
+        des caractères susceptibles de modifier la requête SQL et de permettre
+        la récupération d'informations.</p><p>La principale suggestion est de
+        mettre en place un "
+      references:
+        - >-
+          https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/07-Input_Validation_Testing/05-Testing_for_SQL_Injection
+        - 'https://cwe.mitre.org/data/definitions/89.html'
+      customFields: []
+  category: Validation des entrées
+- cvssv3: 'CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:L'
+  details:
+    - locale: fr
+      title: Injection SQL aveugle basée sur le temps
+      vulnType: OWASP WSTG
+      description: >-
+        <p>L'attaque par injection SQL (SQLi) tente d'obtenir des informations
+        ou même d'exécuter des commandes via cette vulnérabilité en
+        interagissant de manière inattendue avec la base de données.
+      observation: "<ul><li><p>Confidentialité\_: lecture des données d'application\_: étant donné que les bases de données SQL contiennent généralement des données sensibles, la perte de confidentialité est un problème fréquent lié aux vulnérabilités d'injection SQL.</p></li><li><p>Accès"
+      remediation: >-
+        <p>Il est conseillé de nettoyer les paramètres d'entrée de l'application
+        pour résoudre ce problème, car cela empêche les attaquants d'introduire
+        des caractères susceptibles de modifier la requête SQL et de permettre
+        la récupération d'informations.</p><p>La principale suggestion est de
+        mettre en place un "
+      references:
+        - >-
+          https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/07-Input_Validation_Testing/05-Testing_for_SQL_Injection
+        - 'https://cwe.mitre.org/data/definitions/89.html'
+      customFields: []
+  category: Validation des entrées
+- cvssv3: 'CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:L'
+  details:
+    - locale: fr
+      title: Injection SQL aveugle basée sur des booléens
+      vulnType: OWASP WSTG
+      description: >-
+        <p>L'attaquant utilise une injection SQL booléenne pour envoyer des
+        requêtes SQL à la base de données, forçant l'application à renvoyer un
+        résultat différent selon que la requête renvoie vrai ou faux.
+      observation: "<ul><li><p>Confidentialité\_: lecture des données d'application\_: étant donné que les bases de données SQL contiennent généralement des données sensibles, la perte de confidentialité est un problème fréquent lié aux vulnérabilités d'injection SQL.</p></li><li><p>Accès"
+      remediation: >-
+        <p>Il est conseillé de nettoyer les paramètres d'entrée de l'application
+        pour résoudre ce problème, car cela empêche les attaquants d'introduire
+        des caractères susceptibles de modifier la requête SQL et de permettre
+        la récupération d'informations.</p><p>La principale suggestion est de
+        mettre en place un "
+      references:
+        - >-
+          https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/07-Input_Validation_Testing/05-Testing_for_SQL_Injection
+        - 'https://cwe.mitre.org/data/definitions/89.html'
+      customFields: []
+  category: Validation des entrées
+- cvssv3: 'CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:L'
+  details:
+    - locale: fr
+      title: Injection SQL hors bande
+      vulnType: OWASP WSTG
+      description: >-
+        <p>L'injection SQL hors bande exfiltre les données via le canal de
+        sortie, qui peut être le protocole DNS ou HTTP, par opposition à
+        l'injection SQL intrabande et aveugle.
+      observation: "<ul><li><p>Confidentialité\_: lecture des données d'application\_: étant donné que les bases de données SQL contiennent généralement des données sensibles, la perte de confidentialité est un problème fréquent lié aux vulnérabilités d'injection SQL.</p></li><li><p>Accès"
+      remediation: >-
+        <ul><li><p>Côté client et côté serveur, validation des
+        entrées.</p></li><li><p>Gestion correcte des erreurs pour empêcher
+        l'affichage d'informations détaillées les concernant.</
+      references:
+        - >-
+          https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/07-Input_Validation_Testing/05-Testing_for_SQL_Injection
+        - 'https://cwe.mitre.org/data/definitions/89.html'
+      customFields: []
+  category: Validation des entrées
+- cvssv3: 'CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:L'
+  details:
+    - locale: fr
+      title: Injection LDAP
+      vulnType: OWASP WSTG
+      description: >-
+        <p>Les informations sur les utilisateurs, les hôtes et de nombreux
+        autres objets sont stockées à l'aide du protocole LDAP (Lightweight
+        Directory Access Protocol).
+      observation: "<ul><li><p>Intégrité\_: modification des données d'application\_: un attaquant pourrait inclure une entrée qui modifie la requête LDAP, ce qui permet l'exécution de commandes ou de code involontaires, permet la lecture ou la modification de données sensibles ou provoque d'autres comportements involontaires.<"
+      remediation: <p>Supposons que toutes les entrées sont malveillantes.
+      references:
+        - >-
+          https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/07-Input_Validation_Testing/06-Testing_for_LDAP_Injection
+        - >-
+          https://cheatsheetseries.owasp.org/cheatsheets/LDAP_Injection_Prevention_Cheat_Sheet.html
+        - 'https://cwe.mitre.org/data/definitions/90.html'
+      customFields: []
+  category: Validation des entrées
+- cvssv3: 'CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:L'
+  details:
+    - locale: fr
+      title: Traitement des entités externes XML (XXE)
+      vulnType: OWASP WSTG
+      description: >-
+        <p>Certaines applications transmettent des données entre le navigateur
+        et le serveur en utilisant le format XML.
+      observation: "<ul><li><p>Confidentialité\_: lecture de fichiers ou de répertoires\_: si l'attaquant parvient à inclure une DTD contrefaite et qu'un résolveur d'entité par défaut est activé, l'attaquant peut accéder à des fichiers arbitraires sur le système.</p"
+      remediation: >-
+        <p>Selon l'aide-mémoire OWASP « XXE Prevention », désactivez le
+        traitement des entités externes XML et des DTD dans tous les analyseurs
+        XML de l'application. De plus, utilisez la validation, le filtrage ou la
+        désinfection des entrées côté serveur qui est positif (« liste blanche »
+      references:
+        - 'https://cwe.mitre.org/data/definitions/611.html'
+        - >-
+          https://owasp.org/www-community/vulnerabilities/XML_External_Entity_(XXE)_Processing
+          https://capec.mitre.org/data/definitions/201.html
+      customFields: []
+  category: Validation des entrées
+- cvssv3: 'CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:N'
+  details:
+    - locale: fr
+      title: Injection côté serveur (SSI)
+      vulnType: OWASP WSTG
+      description: >-
+        <p>SSI (Server-Side Include) sont des directives présentes dans les
+        applications Web qui servent à alimenter une page HTML avec du contenu
+        dynamique.
+      observation: "<ul><li><p>Confidentialité\_: lecture des données de l'application\_: le code injecté pourrait accéder à des données/fichiers restreints.</p></li><li><p>Contrôle d'accès\_: mécanisme de protection de contournement\_: dans certains cas,"
+      remediation: >-
+        <p>Les données contrôlables par l'utilisateur ne doivent pas, dans la
+        mesure du possible, être intégrées par les applications dans des pages
+        rendues pour les directives SSI.
+      references:
+        - >-
+          https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/07-Input_Validation_Testing/08-Testing_for_SSI_Injection
+        - >-
+          https://owasp.org/www-community/attacks/Server-Side_Includes_(SSI)_Injection#:~:text=The%20Server%2DSide%20Includes%20attack,use%20through%20user%20input%20fields.
+        - '- http://httpd.apache.org/docs/current/howto/ssi.html'
+        - 'https://cwe.mitre.org/data/definitions/96.html'
+        - 'https://cwe.mitre.org/data/definitions/116.html'
+        - 'https://cwe.mitre.org/data/definitions/159.html'
+      customFields: []
+  category: Validation des entrées
+- cvssv3: 'CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:L'
+  details:
+    - locale: fr
+      title: Injection XPATH
+      vulnType: OWASP WSTG
+      description: >-
+        <p>Semblables à l'injection SQL, les attaques par injection XPath ont
+        lieu lorsqu'un site Web crée une requête XPath pour des données XML à
+        l'aide des données fournies par l'utilisateur. XPath est une sorte
+        d'instruction descriptive simple qui permet de rechercher dans le XML
+        une information spécifique.
+      observation: "<ul><li><p>Contrôle d'accès\_: mécanisme de protection contre le contournement\_: dans certains cas, le code injectable contrôle l'authentification\_;"
+      remediation: >-
+        <p>Avant d'être incluses dans les requêtes XPATH (XML), les entrées
+        utilisateur doivent être strictement validées.
+      references:
+        - >-
+          https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/07-Input_Validation_Testing/09-Testing_for_XPath_Injection
+        - 'https://owasp.org/www-community/attacks/XPATH_Injection'
+        - 'https://cwe.mitre.org/data/definitions/94.html'
+      customFields: []
+  category: Validation des entrées
+- cvssv3: 'CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:L'
+  details:
+    - locale: fr
+      title: Manipulation du chemin de fichier
+      vulnType: OWASP WSTG
+      description: >-
+        <p>Lorsque des données contrôlables par l'utilisateur sont insérées dans
+        un chemin de fichier ou d'URL utilisé sur le serveur pour accéder à des
+        ressources locales, qui peuvent être situées à l'intérieur ou à
+        l'extérieur de la racine Web, des vulnérabilités de manipulation de
+        chemin de fichier sont créées.
+      observation: "<ul><li><p>Confidentialité\_: lire des fichiers ou des répertoires\_: un attaquant pourrait lire des données confidentielles s'il est capable de contrôler les références aux ressources.</p></li><li><p>Intégrité\_: modifier des fichiers ou"
+      remediation: "<p>Penser que toutes les entrées sont malveillantes. Utilisez une liste d'entrées strictement conformes aux spécifications dans le cadre d'une stratégie de validation des entrées «\_accepter le bien connu\_»."
+      references:
+        - 'https://cwe.mitre.org/data/definitions/35.html'
+        - 'https://capec.mitre.org/data/definitions/126.html'
+      customFields: []
+  category: Validation des entrées
+- cvssv3: 'CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:L'
+  details:
+    - locale: fr
+      title: Contrôle externe du nom de fichier
+      vulnType: OWASP WSTG
+      description: >-
+        <p>En raison d'une vulnérabilité, les noms de fichiers utilisés par le
+        système de fichiers peuvent être modifiés ou contrôlés par
+        l'utilisateur.
+      observation: "<ul><li><p>Confidentialité\_: Modifier des fichiers ou des répertoires\_: L'application peut fonctionner sur des fichiers inattendus."
+      remediation: "<p>Penser que toutes les entrées sont malveillantes. Utilisez une liste d'entrées strictement conformes aux spécifications dans le cadre d'une stratégie de validation des entrées «\_accepter le bien connu\_»."
+      references:
+        - 'https://cwe.mitre.org/data/definitions/73.html'
+      customFields: []
+  category: Validation des entrées
+- cvssv3: 'CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:L'
+  details:
+    - locale: fr
+      title: Exécution de code à distance (RCE) par injection de fichiers locaux
+      vulnType: OWASP WSTG
+      description: >-
+        <p>En utilisant les procédures d'appel de fichiers vulnérables de
+        l'application, l'inclusion de fichiers locaux (LFI) est le processus
+        d'inclusion de fichiers déjà présents sur le serveur.
+      observation: "<ul><li><p>Contrôle d'accès\_: exécuter du code ou des commandes non autorisés\_: cette faiblesse peut conduire à l'exposition de ressources ou de fonctionnalités à des acteurs involontaires, fournissant éventuellement aux attaquants des informations sensibles ou même exécutant du code arbitraire.</p><"
+      remediation: >-
+        <p>La meilleure façon de se débarrasser des vulnérabilités d'inclusion
+        de fichiers est de ne jamais donner d'entrée utilisateur à aucun système
+        de fichiers/API de framework.
+      references:
+        - >-
+          https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/07-Input_Validation_Testing/11.1-Testing_for_File_Inclusion
+        - 'https://cwe.mitre.org/data/definitions/20.html'
+        - >-
+          https://owasp.org/www-project-web-security-testing-guide/stable/4-Web_Application_Security_Testing/07-Input_Validation_Testing/11-Testing_for_Code_Injection
+      customFields: []
+  category: Validation des entrées
+- cvssv3: 'CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:L'
+  details:
+    - locale: fr
+      title: Exécution de code à distance (RCE)
+      vulnType: OWASP WSTG
+      description: >-
+        <p>Les attaques connues sous le nom d'exécution de code à distance (RCE)
+        donnent à un attaquant la possibilité d'exécuter à distance du code
+        malveillant sur un ordinateur.
+      observation: "<ul><li><p>Contrôle d'accès\_: exécuter du code ou des commandes non autorisés\_: cette faiblesse peut conduire à l'exposition de ressources ou de fonctionnalités à des acteurs involontaires, fournissant éventuellement aux attaquants des informations sensibles ou même exécutant du code arbitraire.</p><"
+      remediation: >-
+        <p>Limiter la source, qu'il s'agisse d'une entrée ou d'un chemin ouvert
+        menant à une application, à partir de laquelle le RCE est
+        accessible.</p>
+      references:
+        - >-
+          https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/07-Input_Validation_Testing/11.1-Testing_for_File_Inclusion
+        - >-
+          https://cheatsheetseries.owasp.org/cheatsheets/File_Upload_Cheat_Sheet.html
+        - 'https://cwe.mitre.org/data/definitions/20.html'
+      customFields: []
+  category: Validation des entrées
+- cvssv3: 'CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:L'
+  details:
+    - locale: fr
+      title: Exécution de code à distance (RCE) par injection de fichiers à distance
+      vulnType: OWASP WSTG
+      description: >-
+        <p>Le processus d'inclusion de références à des fichiers distants à
+        partir d'un autre serveur via l'utilisation de procédures d'appel de
+        fichiers faibles implémentées dans l'application est connu sous le nom
+        d'inclusion de fichiers distants (RFI).
+      observation: "<ul><li><p>Contrôle d'accès\_: exécuter du code ou des commandes non autorisés\_: cette faiblesse peut conduire à l'exposition de ressources ou de fonctionnalités à des acteurs involontaires, fournissant éventuellement aux attaquants des informations sensibles ou même exécutant du code arbitraire.</p><"
+      remediation: >-
+        <p>La meilleure façon de se débarrasser des vulnérabilités d'inclusion
+        de fichiers est de ne jamais donner d'entrée utilisateur à aucun système
+        de fichiers/API de framework.
+      references:
+        - >-
+          https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/07-Input_Validation_Testing/11.1-Testing_for_File_Inclusion
+        - >-
+          https://cheatsheetseries.owasp.org/cheatsheets/File_Upload_Cheat_Sheet.html
+        - 'https://cwe.mitre.org/data/definitions/20.html'
+      customFields: []
+  category: Validation des entrées
+- cvssv3: 'CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N'
+  details:
+    - locale: fr
+      title: Contrôle d'accès inapproprié
+      vulnType: OWASP WSTG
+      description: "<p>Le logiciel ne restreint pas ou restreint de manière incorrecte l'accès à une ressource à un acteur non autorisé. Le contrôle d'accès implique l'utilisation de plusieurs mécanismes de protection tels que\_:</p><ul><li><p>L'authentification (prouver l'identité"
+      observation: "<ul><li><p>Contrôle d'accès\_: mécanisme de protection contre le contournement\_: les contrôles de contrôle d'accès pour des données ou fonctionnalités utilisateur spécifiques peuvent être contournés.</p></li></ul>"
+      remediation: >-
+        <p>Architecture et conception</p><ul><li><p>Gérer très soigneusement la
+        configuration, la gestion et la gestion des privilèges.
+      references:
+        - 'https://cwe.mitre.org/data/definitions/284.html'
+      customFields: []
+  category: Autorisation
+- cvssv3: 'CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:L'
+  details:
+    - locale: fr
+      title: Exécution de code à distance (RCE) par un contrôle d'accès inapproprié
+      vulnType: OWASP WSTG
+      description: >-
+        <p>L'incapacité du logiciel à imposer des contrôles d'accès sur un objet
+        du site Web est appelée vulnérabilité de contrôle d'accès inappropriée.
+      observation: "<ul><li><p>Autre\_: varie selon le contexte\_: un attaquant peut accéder à toute fonctionnalité accessible par inadvertance à la source.</p></li></ul>"
+      remediation: >-
+        <p>Ne permettez pas aux utilisateurs anonymes d'accéder à ce site
+        Web.</p>
+      references:
+        - 'https://cwe.mitre.org/data/definitions/284.html'
+      customFields: []
+  category: Autorisation
+- cvssv3: 'CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:L'
+  details:
+    - locale: fr
+      title: Injection de commandes
+      vulnType: OWASP WSTG
+      description: "<p>Les vulnérabilités d'injection de commandes se produisent généralement lorsque\_:</p><ol><li><p>Des données pénètrent dans l'application à partir d'une source non fiable.</p></li><li><p>Les données font partie"
+      observation: "<ul><li><p>Intégrité\_: Exécuter du code ou des commandes non autorisés\_: Si un utilisateur malveillant injecte un caractère (comme un point-virgule) qui délimite la fin d'une commande et le début d'une autre, il peut être possible de"
+      remediation: >-
+        <p>Il est recommandé de limiter autant que possible les capacités de
+        l'utilisateur lorsqu'il lui permet d'exécuter des commandes spécifiques
+        sur le serveur et d'évaluer, en premier lieu, s'il est absolument
+        nécessaire que l'utilisateur puisse transporter
+      references:
+        - >-
+          https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/07-Input_Validation_Testing/12-Testing_for_Command_Injection
+        - 'https://portswigger.net/web-security/os-command-injection'
+        - 'https://cwe.mitre.org/data/definitions/77.html'
+        - 'https://cwe.mitre.org/data/definitions/78.html'
+      customFields: []
+  category: Validation des entrées
+- cvssv3: 'CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:L'
+  details:
+    - locale: fr
+      title: Injection de commandes dans les en-têtes HTTP Host.
+      vulnType: OWASP WSTG
+      description: >-
+        <p>Un serveur Web héberge généralement plusieurs applications Web sur la
+        même adresse IP, référençant chaque application via l'hôte virtuel.
+      observation: "<ul><li><p>Contrôle d'accès\_: exécuter du code ou des commandes non autorisés\_: cette faiblesse peut conduire à l'exposition de ressources ou de fonctionnalités à des acteurs involontaires, fournissant éventuellement aux attaquants des informations sensibles ou même exécutant du code arbitraire.</p><"
+      remediation: >-
+        <p>Pour filtrer, échapper ou encoder les données non sécurisées envoyées
+        depuis le serveur dans un en-tête de réponse HTTP, effectuez une
+        validation de sortie.</p><p>Désactivez la possibilité pour le navigateur
+        du client d'exécuter des scripts.</p>
+      references:
+        - >-
+          https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/07-Input_Validation_Testing/17-Testing_for_Host_Header_Injection
+        - 'https://cwe.mitre.org/data/definitions/644.html'
+      customFields: []
+  category: Validation des entrées
+- cvssv3: 'CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:L'
+  details:
+    - locale: fr
+      title: Injection de modèles côté serveur (SSTI)
+      vulnType: OWASP WSTG
+      description: "<p>Lorsqu'un utilisateur demande une vue HTML, les applications modernes la génèrent à l'aide d'un moteur de modèles (également appelé «\_modèles\_»)."
+      observation: "<ul><li><p>Contrôle d'accès\_: mécanisme de protection contre le contournement\_: dans certains cas, le code injectable contrôle l'authentification\_;"
+      remediation: >-
+        <p>Assurez-vous de ne pas transmettre de variables contrôlables par
+        l'utilisateur aux fonctions qui affichent les modèles.
+      references:
+        - >-
+          https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/07-Input_Validation_Testing/18-Testing_for_Server-side_Template_Injection
+        - 'https://cwe.mitre.org/data/definitions/94.html'
+        - 'https://portswigger.net/research/server-side-template-injection'
+      customFields: []
+  category: Validation des entrées
+- cvssv3: 'CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:N'
+  details:
+    - locale: fr
+      title: Falsification de requêtes côté serveur (SSRF)
+      vulnType: OWASP WSTG
+      description: >-
+        <p>La vulnérabilité SSRF (Server-Side Request Forgery) survient
+        lorsqu'il est possible de demander au serveur d'envoyer une requête à
+        n'importe quel domaine en utilisant les données d'entrée de
+        l'utilisateur.
+      observation: "<ul><li><p>Confidentialité\_: lire les données de l'application\_: le code injecté pourrait accéder à des données/fichiers restreints.</p></li><li><p>Intégrité\_: exécuter du code ou des commandes non autorisés\_: l'attaquant peut"
+      remediation: >-
+        <p>La mise sur liste blanche des entrées autorisées par ce paramètre
+        constitue l'atténuation appropriée pour cette vulnérabilité.
+      references:
+        - >-
+          https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/07-Input_Validation_Testing/19-Testing_for_Server-Side_Request_Forgery
+        - 'https://cwe.mitre.org/data/definitions/918.html'
+      customFields: []
+  category: Validation des entrées
+- cvssv3: 'CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:L'
+  details:
+    - locale: fr
+      title: Schéma de validation JSON
+      vulnType: OWASP WSTG
+      description: >-
+        <p>Un vocabulaire appelé JSON Schema vous permet d'annoter et de valider
+        des documents JSON.</p><p>Vous avez un meilleur contrôle sur les types
+        de saisie utilisateur qui peuvent être fournis dans votre application
+        lors de l'ajout de schémas à vos fichiers JSON.Quand
+      observation: "<ul><li><p>Disponibilité\_: DoS\_: consommation de ressources (mémoire)\_: un attaquant pourrait fournir des valeurs inattendues et provoquer un crash du programme ou une consommation excessive de ressources, telles que la mémoire et le processeur.</p></li>"
+      remediation: >-
+        <p>Pour garantir une requête JSON correctement formatée, confirmez que
+        la validation du schéma JSON a lieu.
+      references:
+        - 'https://cwe.mitre.org/data/definitions/20.html'
+      customFields: []
+  category: Validation des entrées
+- cvssv3: 'CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:L'
+  details:
+    - locale: fr
+      title: Schéma XML (XSD)
+      vulnType: OWASP WSTG
+      description: >-
+        <p>Vous avez un meilleur contrôle sur le type d'entrée utilisateur qui
+        peut être fourni dans votre application lors de l'ajout de schémas à vos
+        fichiers XML.
+      observation: "<ul><li><p>Disponibilité\_: DoS\_: consommation de ressources (mémoire)\_: un attaquant pourrait fournir des valeurs inattendues et provoquer un crash du programme ou une consommation excessive de ressources, telles que la mémoire et le processeur.</p></li>"
+      remediation: >-
+        <p>Vérifiez que le schéma XSD est validé pour vous assurer que le
+        document XML est correctement formaté, puis validez chaque champ de
+        saisie avant le traitement des données.</p>
+      references:
+        - 'https://cwe.mitre.org/data/definitions/20.html'
+      customFields: []
+  category: Validation des entrées
+- cvssv3: 'CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:L'
+  details:
+    - locale: fr
+      title: Vérifier que les données structurées sont fortement typées et validées
+      vulnType: OWASP WSTG
+      description: >-
+        <p>Lorsque les données structurées sont étroitement typées et vérifiées
+        par rapport à un schéma spécifié, une application proactive défendable
+        peut être créée.
+      observation: "<ul><li><p>Disponibilité\_: DoS\_: consommation de ressources (mémoire)\_: un attaquant pourrait fournir des valeurs inattendues et provoquer un crash du programme ou une consommation excessive de ressources, telles que la mémoire et le processeur.</p></li>"
+      remediation: >-
+        <p>Vérifiez que les données structurées sont fortement typées et
+        validées par rapport à un schéma défini, y compris les caractères, la
+        longueur et le modèle autorisés (par exemple, les numéros de carte de
+        crédit ou les numéros de téléphone, ou vérifiez que deux champs associés
+        sont logiques, comme la validation des banlieues.
+      references:
+        - 'https://cwe.mitre.org/data/definitions/20.html'
+      customFields: []
+  category: Validation des entrées
+- cvssv3: 'CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N'
+  details:
+    - locale: fr
+      title: >-
+        Divulgation d'informations sensibles en raison d'une mauvaise gestion
+        des erreurs de candidature.
+      vulnType: OWASP WSTG
+      description: >-
+        <p>Les erreurs verbeuses qui ne sont pas correctement contrôlées
+        entraînent fréquemment des réponses qui informent l'utilisateur de
+        l'architecture interne de l'application.
+      observation: "<ul><li><p>Confidentialité\_: lecture des données de l'application\_: l'attaquant obtient des informations à partir d'une réponse à un message d'erreur</p></li></ul>"
+      remediation: >-
+        <p>Pour empêcher l'application d'afficher des informations sensibles de
+        votre infrastructure ou base de données, mettez en œuvre un système de
+        redirections approprié pour sécuriser les pages ou les textes génériques
+        dans la réponse.</p>
+      references:
+        - >-
+          https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/08-Testing_for_Error_Handling/01-Testing_For_Improper_Error_Handling
+      customFields: []
+  category: Gestion des erreurs
+- cvssv3: 'CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N'
+  details:
+    - locale: fr
+      title: Abus du flux de travail de la logique applicative.
+      vulnType: OWASP WSTG
+      description: >-
+        <p>Les vulnérabilités de workflow impliquent tout type de vulnérabilité
+        qui permet à un attaquant d'utiliser à mauvais escient une
+        application/un système d'une manière qui lui permet de contourner (et
+        non de suivre) le workflow conçu/prévu.</p><p>Définition d'un workflow
+        sur
+      observation: "<ul><li><p>Autre\_: modifier la logique d'exécution\_: un attaquant pourrait amener le logiciel à sauter des étapes critiques ou à les exécuter dans le mauvais ordre, contournant ainsi sa logique métier prévue."
+      remediation: >-
+        <p>L'application a besoin de contrôles qui garantissent que les
+        utilisateurs effectuent chaque étape du flux de travail dans le bon
+        ordre et empêchent les attaquants de contourner, sauter ou rejouer des
+        étapes ou des processus du flux de travail.
+      references:
+        - >-
+          https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/10-Business_Logic_Testing/06-Testing_for_the_Circumvention_of_Work_Flows
+      customFields: []
+  category: Fonctionnalité/logique métier
+- cvssv3: 'CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:N'
+  details:
+    - locale: fr
+      title: >-
+        Validation non sécurisée dans la fonctionnalité de téléchargement de
+        fichiers
+      vulnType: OWASP WSTG
+      description: >-
+        <p>De nombreuses applications permettent aux utilisateurs de télécharger
+        des données dans leurs processus métier.
+      observation: "<ul><li><p>Disponibilité\_: Exécuter du code ou des commandes non autorisés\_: L'exécution de code arbitraire est possible si un fichier téléchargé est interprété et exécuté comme du code par le destinataire."
+      remediation: <p>Contrôlez correctement les types de fichiers envoyés à l'application.
+      references:
+        - >-
+          https://owasp.org/www-project-web-security-testing-guide/stable/4-Web_Application_Security_Testing/10-Business_Logic_Testing/09-Test_Upload_of_Malicious_Files.html
+        - >-
+          https://cheatsheetseries.owasp.org/cheatsheets/File_Upload_Cheat_Sheet.html
+      customFields: []
+  category: Fonctionnalité/logique métier
+- cvssv3: 'CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:L'
+  details:
+    - locale: fr
+      title: Désérialisation non sécurisée
+      vulnType: OWASP WSTG
+      description: >-
+        <p>Il est souvent pratique de sérialiser des objets pour les communiquer
+        ou de les enregistrer pour une utilisation ultérieure.
+      observation: "<ul><li><p>Intégrité\_: état inattendu\_: les attaquants peuvent modifier des objets ou des données inattendus qui étaient supposés être à l'abri de toute modification.</p></li><li><p>Disponibilité\_: DoS\_: consommation de ressources"
+      remediation: "<p>Les mesures d'atténuation possibles pour les différentes phases du processus de création d'application sont décrites ci-dessous\_:</p><ul><li><p>Phases\_: architecture et conception\_;"
+      references:
+        - >-
+          https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/10-Business_Logic_Testing/01-Test_Business_Logic_Data_Validation
+        - >-
+          https://cheatsheetseries.owasp.org/cheatsheets/Deserialization_Cheat_Sheet.html
+        - 'https://cwe.mitre.org/data/definitions/502.html'
+      customFields: []
+  category: Fonctionnalité/logique métier
+- cvssv3: 'CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:L/A:N'
+  details:
+    - locale: fr
+      title: Redirection d'URL côté client (redirection ouverte)
+      vulnType: OWASP WSTG
+      description: >-
+        <p>Une vulnérabilité connue sous le nom d'Open Redirect se produit
+        lorsqu'un programme intègre par inadvertance des données contrôlables
+        par l'utilisateur dans la destination d'une redirection.
+      observation: "<ul><li><p>Contrôle d'accès\_:\_obtenir des privilèges ou assumer une identité\_: l'utilisateur peut être redirigé vers une page non fiable contenant des logiciels malveillants susceptibles de compromettre la machine de l'utilisateur."
+      remediation: >-
+        <p>En désactivant la fonction de redirection ou en conservant une liste
+        côté serveur de toutes les URL autorisées pour la redirection, les
+        applications doivent, dans la mesure du possible, éviter d'incorporer
+        des données contrôlables par l'utilisateur dans les cibles de
+        redirection.</p>
+      references:
+        - 'https://cwe.mitre.org/data/definitions/601.html'
+        - 'https://portswigger.net/kb/issues/00500100_open-redirection-reflected'
+      customFields: []
+  category: Web côté client
+- cvssv3: 'CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:N'
+  details:
+    - locale: fr
+      title: Injection de contenu HTML
+      vulnType: OWASP WSTG
+      description: >-
+        <p>Les injections HTML permettent l'injection côté client de code HTML
+        que le navigateur de la victime interprétera lors de la visite d'une
+        URL.
+      observation: "<ul><li><p>Disponibilité\_: DoS\_: consommation de ressources (mémoire)\_: un attaquant pourrait fournir des valeurs inattendues et provoquer un crash du programme ou une consommation excessive de ressources, telles que la mémoire et le processeur.</p></li>"
+      remediation: >-
+        <p>Ce type d'attaque peut être stoppé en nettoyant correctement les
+        entrées de l'utilisateur ou en validant correctement le contenu que le
+        serveur reçoit et envoie.</p>
+      references:
+        - >-
+          https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/11-Client-side_Testing/03-Testing_for_HTML_Injection
+        - 'https://cwe.mitre.org/data/definitions/20.html'
+      customFields: []
+  category: Web côté client
+- cvssv3: 'CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N'
+  details:
+    - locale: fr
+      title: Injection de contenu CSS
+      vulnType: OWASP WSTG
+      description: >-
+        <p>Semblable au fonctionnement des injections HTML ou XSS, les
+        injections CSS donnent aux pirates la possibilité d'insérer du code CSS
+        côté client, que le navigateur de la victime interprétera ensuite
+        lorsqu'elle visitera une URL.
+      observation: "<ul><li><p>Disponibilité\_: DoS\_: consommation de ressources (mémoire)\_: un attaquant pourrait fournir des valeurs inattendues et provoquer un crash du programme ou une consommation excessive de ressources, telles que la mémoire et le processeur.</p></li>"
+      remediation: >-
+        <p>Ce type d'attaque peut être stoppé en validant correctement le
+        contenu que le serveur reçoit et envoie, ou en nettoyant correctement
+        les entrées de l'utilisateur.</p>
+      references:
+        - >-
+          https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/11-Client-side_Testing/05-Testing_for_CSS_Injection
+        - >-
+          https://research.securitum.com/css-data-exfiltration-in-firefox-via-single-injection-point/
+        - 'https://cwe.mitre.org/data/definitions/20.html'
+      customFields: []
+  category: Web côté client
+- cvssv3: 'CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:N'
+  details:
+    - locale: fr
+      title: Scripts intersites (XSS) basés sur DOM
+      vulnType: OWASP WSTG
+      description: >-
+        <p>Une attaque XSS connue sous le nom de XSS basé sur DOM provoque
+        l'exécution de code côté client de manière « inattendue » en modifiant «
+        l'environnement » DOM que le navigateur de la victime a été conçu pour
+        utiliser par le script côté client d'origine.
+      observation: "<ul><li><p>Confidentialité\_: lecture des données d'application\_: l'attaque la plus courante effectuée avec des scripts intersites implique la divulgation d'informations stockées dans les cookies des utilisateurs."
+      remediation: >-
+        <p>Aucune action à elle seule ne peut éliminer complètement la menace
+        des attaques basées sur le DOM.
+      references:
+        - >-
+          https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/11-Client-side_Testing/01-Testing_for_DOM-based_Cross_Site_Scripting
+        - 'https://cwe.mitre.org/data/definitions/79.html'
+      customFields: []
+  category: Web côté client
+- cvssv3: 'CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:N'
+  details:
+    - locale: fr
+      title: Mauvaise configuration du partage de ressources Cross-Origin (CORS)
+      vulnType: OWASP WSTG
+      description: <p>CORS signifie Cross-Origin Resource Sharing.
+      observation: "<ul><li><p>Autre\_: varie selon le contexte\_: un attaquant peut accéder à toute fonctionnalité accessible par inadvertance à la source.</p></li></ul>"
+      remediation: >-
+        <p>Autorisez uniquement les domaines ou sous-domaines approuvés auxquels
+        l'application doit faire confiance dans l'en-tête
+        Access-Control-Allow-Origin.</p>
+      references:
+        - >-
+          https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/11-Client-side_Testing/07-Testing_Cross_Origin_Resource_Sharing
+        - 'https://cwe.mitre.org/data/definitions/942.html'
+        - 'https://developer.mozilla.org/es/docs/Web/HTTP/CORS'
+        - >-
+          https://stackoverflow.com/questions/1653308/access-control-allow-origin-multiple-origin-domains
+      customFields: []
+  category: Web côté client
+- cvssv3: 'CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N'
+  priority: 3
+  remediationComplexity: 2
+  details:
+    - locale: fr
+      title: Environnement hors production exposés
+      vulnType: OWASP WSTG
+      description: >-
+        <p>Les environnements hors production désignent toute configuration
+        utilisée à des fins autres que les applications opérationnelles. Il
+        s'agit notamment des environnements de développement, de test, de
+        staging et d'assurance qualité (QA). Ils sont essentiels pour préparer
+        les logiciels à la production en permettant des tests et des débogages
+        approfondis.</p><p>Souvent les environnements de hors production ne sont
+        pas aussi bien protégés que leurs homologues en production. Ils mettent
+        donc l'organisation en danger sans le savoir.</p>
+      observation: >-
+        <p><strong>Violation et fuite de données</strong></p><p>Les
+        environnements hors production contiennent souvent des données sensibles
+        ou confidentielles, parfois en reproduisant des bases de données de
+        production pour tester des scénarios réels. L'exposition de ces
+        environnements à l'internet sans contrôles de sécurité appropriés peut
+        conduire à des violations de données, exposant les données des clients,
+        les secrets commerciaux et d'autres informations
+        sensibles.</p><p><strong>Exploitation des
+        vulnérabilités</strong></p><p>Ces environnements sont souvent moins sûrs
+        que les environnements de production, avec des contrôles de sécurité
+        plus faibles et des versions logicielles obsolètes. Cela en fait des
+        cibles de choix pour les attaquants qui exploitent les vulnérabilités,
+        obtiennent un accès non autorisé et peuvent utiliser ces environnements
+        comme base de lancement pour des attaques sur les systèmes de
+        production.</p><p><strong>Exposition de la propriété
+        intellectuelle</strong></p><p>Les environnements d'essai peuvent
+        contenir des fonctionnalités ou des produits à venir qui ne sont pas
+        encore publics. L'exposition de ces éléments à l'internet peut entraîner
+        la perte de la propriété intellectuelle, en donnant aux concurrents un
+        aperçu des projets futurs ou en permettant à des entités malveillantes
+        de copier ou de saboter des projets non encore
+        diffusés.</p><p><strong>Problématique de conformité</strong></p><p>Pour
+        les industries régies par des réglementations strictes en matière de
+        protection des données, l'exposition d'un environnement de transit
+        contenant des données sensibles ou personnelles peut entraîner des
+        violations de la conformité, avec des amendes élevées et des
+        conséquences juridiques.</p>
+      remediation: >-
+        <p><strong>Segmentation du réseau</strong></p><p>Isolez l'environnement
+        de préparation de l'internet public et du réseau de production. Utilisez
+        des pare-feu et des réseaux privés virtuels pour restreindre l'accès, en
+        veillant à ce que seul le personnel autorisé puisse y
+        accéder.</p><p><strong>Assainissement des données</strong></p><p>Évitez
+        d'utiliser des données réelles dans l'environnement de préparation. Si
+        des données réelles sont nécessaires, veillez à ce qu'elles soient
+        anonymisées ou assainies de manière adéquate afin d'éviter toute
+        fuite.</p><p><strong>Mises à jour régulières et pratiques de
+        sécurité</strong></p><p>Appliquer les mêmes mesures de sécurité en phase
+        d'essai qu'en phase de production. Mettez régulièrement à jour et
+        corrigez les systèmes, effectuez des audits de sécurité et surveillez le
+        trafic réseau afin de détecter les menaces et d'y répondre
+        rapidement.</p>
+      references:
+        - >-
+          https://brackish.io/penetration-testing-findings-exposed-non-production-environments
+      customFields: []
+  category: Gestion de la configuration et du déploiement

@@ -41,7 +41,7 @@ services:
     networks:
       - backend
 
-  frontend-app:
+  frontend:
     build:
       context: ./frontend/
       dockerfile: Dockerfile.dev
@@ -60,26 +60,11 @@ services:
     links:
       - backend
     ports:
-       - 8081:8081
+      - 8081:8081
     networks:
       - backend
     environment:
-      - WATCHPACK_POLLING=true
-
-  frontend:
-    image: nginx:stable-alpine
-    user: root
-    volumes:
-      - ./frontend/.docker/nginx.dev.conf:/etc/nginx/conf.d/default.conf
-      - ./frontend/ssl:/etc/nginx/ssl/
-    restart: always
-    ports:
-      - 8443:8443
-    links:
-      - frontend-app
-      - backend
-    networks:
-      - backend
+    - WATCHPACK_POLLING=true
     
 
 volumes:

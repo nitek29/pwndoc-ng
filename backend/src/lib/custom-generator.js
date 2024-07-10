@@ -161,5 +161,32 @@ expressions.filters.convertDateRU = function(input, s) {
     }
 }
 
+// Convert input (integer) to human readable with parameter s (complexity, priority): {input | remediation2Str: 's' }
+expressions.filters.remediation2Str = function(input, s ) {
+    switch (input) {
+        case 1:
+            return s == "priority" ? "Faible" : "Facile"
+        case 2:
+            return "Moyenne"
+        case 3:
+            return s == "priority" ? "Élevée" : "Complexe"
+        case 4:
+            return "Urgent"
+        default:
+            break;
+    }
+}
+
+// Sort by priority and complexity remediation: {input | sortByRemediation }
+expressions.filters.sortByRemediation = function(input) {
+    return input.sort((a, b) => {
+       if (b.priority !== a.priority) {
+          return b.priority - a.priority;
+        } else {
+          return a.remediationComplexity - b.remediationComplexity;
+        }
+      });
+}
+
 exports.expressions = expressions
 
